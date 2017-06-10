@@ -33,10 +33,12 @@ scaleFactor = 1 / 16;
 
 currentImage = self.image_index;
 indexChanged = false;
-Player.visible = false;
 imx = floor(self.image_index);
-Player.image_xscale = scaleFactor;
-Player.image_yscale = scaleFactor;
+if !SaveObject.gameWasLoaded {
+    Player.visible = false;
+    Player.image_xscale = scaleFactor;
+    Player.image_yscale = scaleFactor;
+}
 </string>
           </argument>
         </arguments>

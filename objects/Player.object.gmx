@@ -34,8 +34,8 @@ if(global.checkpointR==room){
     y = global.checkpointy;
 };
 instance_create(0, 0, Crosshair);
-
 paused=false;
+saveAssign_script();
 </string>
           </argument>
         </arguments>

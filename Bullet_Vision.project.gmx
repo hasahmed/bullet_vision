@@ -44,6 +44,7 @@
       <sprite>sprites\quit_button_s</sprite>
       <sprite>sprites\button_region_s</sprite>
       <sprite>sprites\save_and_quit_s</sprite>
+      <sprite>sprites\buttonContinue_s</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\playerFinal_s</sprite>
@@ -207,7 +208,6 @@
       <script>scripts\universalBombMovement_script.gml</script>
     </scripts>
     <scripts name="util">
-      <script>scripts\shakeScreen_script.gml</script>
       <script>scripts\mute_script.gml</script>
       <script>scripts\newArray.gml</script>
       <script>scripts\instance_create_diag_close_anim.gml</script>
@@ -217,10 +217,14 @@
       <script>scripts\buttonLast_script.gml</script>
       <script>scripts\instance_nth_nearest.gml</script>
     </scripts>
-    <script>scripts\save_script.gml</script>
     <script>scripts\pauseMenuSetup_script.gml</script>
+    <script>scripts\shakeScreen_script.gml</script>
     <script>scripts\pauseMenuTearDown_script.gml</script>
-    <script>scripts\load_script.gml</script>
+    <scripts name="save">
+      <script>scripts\load_script.gml</script>
+      <script>scripts\saveAssign_script.gml</script>
+      <script>scripts\save_script.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="player">
@@ -281,6 +285,7 @@
       <object>objects\CasingDestroyer</object>
       <object>objects\Spike</object>
       <object>objects\RockShockwave</object>
+      <object>objects\SaveObject</object>
     </objects>
     <objects name="Minigame">
       <objects name="Juggling">
@@ -303,6 +308,7 @@
       <object>objects\GoToVolcano</object>
       <object>objects\MenuButton</object>
       <object>objects\SaveAndQuitButton</object>
+      <object>objects\ButtonContinue</object>
     </objects>
     <object>objects\DevUtil</object>
   </objects>
