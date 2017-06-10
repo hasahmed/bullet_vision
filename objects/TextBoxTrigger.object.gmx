@@ -66,6 +66,29 @@ line[0] = "example text";
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = -2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -85,11 +108,11 @@ line[0] = "example text";
             <kind>1</kind>
             <string>/// Destroy TextBox when player stops colliding with it
 
+if (instance_exists(Player)) {
+
 /* triggerBox: get the instance_id of the TextBoxTrigger that the player is
 colliding with. This will be used so that when the TextBox is created,
 the text that is written on it can be set specifically to that one TextBoxTrigger */
-if (instance_exists(Player)) {
-
 var triggerBox = instance_position(Player.x, Player.y, TextBoxTrigger);
 
 /* if triggerBox != noone: the above assignment of triggerBox will be
@@ -111,22 +134,42 @@ if (triggerBox != noone){
         /* assign the text that will be in the TextBox to the
         text of the trigger we got a handle on a few lines earlier */
         box.line = triggerBox.line;
+        
+        /*if alarm[0] != -1: make sure the alarm hasn't been set.
+        this chuck of logic is to deal with making sure that
+        text boxes don't get destroyed too quickly */
+        if (alarm[0] == -1) {
+            /*alarm[0]: alarm to make sure that a text box isn't destroyed
+            for a minimum time even if the
+            player is no longer colliding with the trigger */
+            alarm[0] = room_speed * 3;
+            //show_debug_message("alarm: " + string(alarm[0]));
+        }
     }
 }
 /* else: if the player is not overlapping any TextBoxTriggers */
 else {
     /* if( box != noone): if there isnt an instance of box, then do nothing */
     if( box != noone){
+    
+        /* if (alarm[0] == -2): alarm[0] is set to -2 after its done counting
+        down. garunteeing (bad spelling) that the textBox isn't destoyed until
+        the box has been around at least as long as the alarm lasts */
+        if (alarm[0] == -2){
+            
+            /* alarm[0]: set to -1 so that the timer can be reinstated at
+            the next step */
+            alarm[0] = -1;
+            /* if there is an instace of a TextBox named 
+            box then destory it */
+            with box instance_destroy();
         
-        /* if there is an instace of a TextBox named 
-        box then destory it */
-        with box instance_destroy();
+            /* set box equal to noone for the above check in the next cycle */
+            box = noone;
         
-        /* set box equal to noone for the above check in the next cycle */
-        box = noone;
-        
-        /* create a closing animation for the destoryed box */
-        instance_create_diag_close_anim();
+            /* create a closing animation for the destoryed box */
+            instance_create_diag_close_anim();
+        }
     }
 }
 }
