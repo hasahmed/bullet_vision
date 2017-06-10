@@ -220,6 +220,7 @@
     <script>scripts\save_script.gml</script>
     <script>scripts\pauseMenuSetup_script.gml</script>
     <script>scripts\pauseMenuTearDown_script.gml</script>
+    <script>scripts\load_script.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="player">

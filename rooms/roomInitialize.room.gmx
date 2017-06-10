@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>window_set_fullscreen(true)
+  <code>//window_set_fullscreen(true)
 global.checkpoint = noone;//this is which checkpoint you're at
 global.checkpointx = 0; // this is the x value of the checkpoint you're at
 global.checkpointy = 0; // y value of checkpoint

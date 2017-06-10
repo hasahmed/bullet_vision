@@ -41,7 +41,6 @@ moveIncrement = -1; //how far to move the clouds
 moveCount = 0; //default starting position
 moveTimeout = 10; //the number of ticks before moving clouds
 moveAdjustment = moveIncrement; //initialize value;
-show_debug_message(bgsX);
 </string>
           </argument>
         </arguments>
