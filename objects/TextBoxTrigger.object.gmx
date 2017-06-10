@@ -50,6 +50,10 @@ box = noone;
 the instance. Global to the object and is set on player collide, and in the step */
 overlapping = false;
 
+/* lastTouched: used to help destory the correct textBox trigger even when 
+the player isn't touching it */
+lastTouched = false;
+
 
 //triggerBox = instance_find(TextBoxTrigger, 1);
 //write text lines for the text box in the following way
@@ -119,12 +123,13 @@ var triggerBox = instance_position(Player.x, Player.y, TextBoxTrigger);
 noone if the player is not touching any instances of TextBoxTrigger. in that
 case move to the else block */
 if (triggerBox != noone){
-
+    
     /*  if (instance_find(TextBox, 1) == noone): make sure that there
     are no instances of TextBox before proceeding. This is to protect from
     overlaying multiple TextBox-es */
     if (instance_find(TextBox, 1) == noone){
     
+        
         //create the opening animation
         instance_create(xloc, yloc, DialogOpenAnim);
         
@@ -175,6 +180,30 @@ else {
 }
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with TextBoxTrigger lastTouched = false;
+self.lastTouched = true;
 </string>
           </argument>
         </arguments>
