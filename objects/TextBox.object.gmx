@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///DO NOT INSTNACIATE DIRECTLY!
 //do not directly instanciate TextBox. Use TriggerTextBox instead
+ownerID = noone;
 </string>
           </argument>
         </arguments>
@@ -90,34 +91,9 @@ if(!instance_exists(DialogOpenAnim)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///destory self. Create DiologOpenAnim
-var currentTriggerBox = noone;
-
-/* create a closing animation for the curren TextBox */
+            <string>with self.ownerID instance_destroy();
+with self instance_destroy();
 instance_create_diag_close_anim();
-
-/* The following loop assigns currentTriggerBox to the trigger box that was
-touched by the player last */
-for (var i = 0; i &lt; instance_number(TextBoxTrigger); i++) {
-    var tmp = instance_find(TextBoxTrigger, i);
-    if tmp.lastTouched {
-        var currentTriggerBox = tmp;
-        break;
-    }
-}
-
-/* destorys the TextBox attatched to the TextBoxTrigger */
-if currentTriggerBox != noone
-    with currentTriggerBox.box instance_destroy();
-
-/* creates a closing animation for the current TextBox */
-instance_create_diag_close_anim();
-
-/* destroys the TextBoxTrigger that the player is touching so that it will no longer
-trigger a TextBox to be spawned */
-if currentTriggerBox != noone
-    with currentTriggerBox instance_destroy();
-
 </string>
           </argument>
         </arguments>
