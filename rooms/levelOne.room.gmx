@@ -314,7 +314,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="2784" y="1600" name="inst_C26AE784" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="WalkingEnemy" x="2816" y="1760" name="inst_0797A230" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="WalkingEnemy" x="2912" y="1760" name="inst_3C877798" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Portal" x="3067" y="1866" name="inst_3ECAE75F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Portal" x="3031" y="1839" name="inst_3ECAE75F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="0" y="1856" name="inst_5ABCB9B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="0" y="1888" name="inst_31F079E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="0" y="1920" name="inst_2D0487AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

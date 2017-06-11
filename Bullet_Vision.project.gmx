@@ -59,6 +59,7 @@
       <sprite>sprites\Ground_s</sprite>
       <sprite>sprites\rockThrower_s</sprite>
       <sprite>sprites\portal_s</sprite>
+      <sprite>sprites\portal2_s</sprite>
       <sprite>sprites\secret_s</sprite>
       <sprite>sprites\groundfill_s</sprite>
       <sprite>sprites\checkpoint_s</sprite>
