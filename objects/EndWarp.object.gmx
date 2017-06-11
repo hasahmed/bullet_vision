@@ -30,6 +30,9 @@ image_yscale=2
 image_speed=.3
 lastLevel=false
 depth=Portal.depth-1
+xDist=x-Player.x
+yDist=y-10-Player.y
+Player.maxSpeed=0
 </string>
           </argument>
         </arguments>
@@ -52,13 +55,23 @@ depth=Portal.depth-1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Player.x=x
-Player.y=y
+            <string>Player.hSpeed=0
+Player.vSpeed=0
+//Player.x=x
+//Player.y=y
 Player.depth=depth-1
+
+xStep=xDist/(10/image_speed)
+yStep=yDist/(10/image_speed)
+if(image_index&lt;10){
+    Player.x+=xStep
+    Player.y+=yStep
+}
+
 if(image_index&gt;10){
-    //Player.image_angle-=12;
-    //Player.image_xscale*=.95
-    //Player.image_yscale*=.95
+    Player.image_angle-=12;
+    Player.image_xscale*=.95
+    Player.image_yscale*=.95
 }
 
 if(image_index&gt;28)Player.visible=false;
