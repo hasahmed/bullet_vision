@@ -321,6 +321,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
+    <room>rooms\rushin_Granny</room>
     <room>rooms\start_screen</room>
     <room>rooms\levelOne</room>
     <room>rooms\levelTwo</room>
@@ -329,7 +330,6 @@
     <room>rooms\levelFive</room>
     <room>rooms\levelSix</room>
     <room>rooms\bossLevel</room>
-    <room>rooms\rushin_Granny</room>
     <room>rooms\juggling_MiniGame</room>
     <room>rooms\room8</room>
   </rooms>

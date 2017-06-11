@@ -27,6 +27,7 @@ global.musicSelector=-1;
 global.currentRoom=levelOne;
 global.miniGamesUnlocked=false;
 
+window_set_fullscreen(true)
 global.lastTouchedBlock=noone
 //SAVING INFORMATION
 
