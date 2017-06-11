@@ -1362,6 +1362,7 @@ global.musicSelector=0;</code>
     <instance objName="TextBoxTrigger" x="2496" y="1984" name="inst_4CBF426F" locked="0" code="line[0]=&quot;Congratulations! You found this game's only secret!&quot;&#xA;line[1]=&quot;This octopus wants to be your friend.&quot;&#xA;line[2]=&quot;Press 'Space' or 'W' to climb and detach from walls.&quot;&#xA;line[3]=&quot;&quot;&#xA;line[4]=&quot;Also, Miltank is gross and Chris is an idiot.&quot;&#xA;" scaleX="9" scaleY="0.959999978542328" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="3392" y="1344" name="inst_1F6517DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="3360" y="1344" name="inst_201B29DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Portal" x="448" y="1674" name="inst_9CA2DBAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="1024" y="1440" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_3F8EBECC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

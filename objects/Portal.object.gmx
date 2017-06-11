@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>lastLevel=false;
+makeWarp=true;
 </string>
           </argument>
         </arguments>
@@ -49,6 +50,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed=.1;
+warp=instance_place(x,y,EndWarp)
 </string>
           </argument>
         </arguments>
@@ -71,7 +73,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(fuse);
+            <string>/*audio_stop_sound(fuse);
 audio_stop_sound(digeridoo);
 if(lastLevel){
     global.checkpointR=room;
@@ -79,7 +81,12 @@ if(lastLevel){
     global.currentRoom=levelOne;
     room_goto(start_screen);
 }
-else room_goto_next();
+else room_goto_next();*/
+if(makeWarp){
+    portal=instance_create(x,y,EndWarp);
+    if(lastLevel)portal.lastLevel=true;
+    makeWarp=false;
+}
 </string>
           </argument>
         </arguments>

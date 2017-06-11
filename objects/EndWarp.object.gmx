@@ -3,7 +3,7 @@
   <spriteName>warp_s</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,20 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var iSpeed = 0.30;
-self.image_speed = iSpeed;
-
-scaleFactor = 1 / 16;
-
-
-currentImage = self.image_index;
-indexChanged = false;
-imx = floor(self.image_index);
-if !SaveObject.gameWasLoaded {
-    Player.visible = false;
-    Player.image_xscale = scaleFactor;
-    Player.image_yscale = scaleFactor;
-}
+            <string>image_xscale=2
+image_yscale=2
+image_speed=.3
+lastLevel=false
+depth=Portal.depth-1
+xDist=x-Player.x
+yDist=y-10-Player.y
+Player.maxSpeed=0
 </string>
           </argument>
         </arguments>
@@ -61,42 +55,37 @@ if !SaveObject.gameWasLoaded {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>Player.hSpeed=0
+Player.vSpeed=0
+//Player.x=x
+//Player.y=y
+Player.depth=depth-1
 
-if(image_index&lt;28){
-    Player.vSpeed=-1
-    Player.hSpeed=10
-    Player.image_angle-=12
-    Player.image_index=13
-    Player.x = x
-    Player.y = y
+xStep=xDist/(10/image_speed)
+yStep=yDist/(10/image_speed)
+if(image_index&lt;10){
+    Player.x+=xStep
+    Player.y+=yStep
 }
 
-if floor(self.image_index &gt; 11 &amp;&amp; indexChanged) { // the 9th image is where the player
-    // will start appearing
-    if(Player.image_xscale+scaleFactor&lt;=1)
-        Player.image_xscale += scaleFactor;
-    if(Player.image_yscale+scaleFactor&lt;=1)
-        Player.image_yscale += scaleFactor;
-    
-    Player.visible = true;
-    indexChanged = false;
+if(image_index&gt;10){
+    Player.image_angle-=12;
+    Player.image_xscale*=.95
+    Player.image_yscale*=.95
 }
 
-if(image_index &gt;= 28){
-    Player.image_xscale = 1;
-    Player.image_yscale = 1;
-    Player.image_angle=0;
-    //Player.visible = true;
-    //with self instance_destroy();
+if(image_index&gt;28)Player.visible=false;
+if(image_index&gt;=image_number-1){
+    audio_stop_sound(fuse);
+    audio_stop_sound(digeridoo);
+    if(lastLevel){
+        global.checkpointR=room;
+        global.miniGamesUnlocked=true;
+        global.currentRoom=levelOne;
+        room_goto(start_screen);
+    }
+    else room_goto_next();
 }
-
-if(image_index &gt;= image_number-1) with self instance_destroy()
-
-if imx != floor(self.image_index)
-    indexChanged = true;
-
-imx = floor(self.image_index);
 </string>
           </argument>
         </arguments>

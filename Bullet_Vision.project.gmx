@@ -104,6 +104,8 @@
       <sprite>sprites\spike_s</sprite>
     </sprites>
     <sprite>sprites\blankSquare_s</sprite>
+    <sprite>sprites\plantBody_s</sprite>
+    <sprite>sprites\plantHead_s</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Space2_b</background>
@@ -258,6 +260,8 @@
       <object>objects\Boss</object>
       <object>objects\SpikeEnemy</object>
       <object>objects\ShockwaveEnemy</object>
+      <object>objects\PlantBody</object>
+      <object>objects\PlantHead</object>
     </objects>
     <objects name="Other">
       <object>objects\particle</object>
@@ -286,6 +290,7 @@
       <object>objects\Spike</object>
       <object>objects\RockShockwave</object>
       <object>objects\SaveObject</object>
+      <object>objects\EndWarp</object>
     </objects>
     <objects name="Minigame">
       <objects name="Juggling">
