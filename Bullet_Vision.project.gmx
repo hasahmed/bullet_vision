@@ -108,6 +108,7 @@
     <sprite>sprites\blankSquare_s</sprite>
     <sprite>sprites\plantBody_s</sprite>
     <sprite>sprites\plantHead_s</sprite>
+    <sprite>sprites\sprite62</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Space2_b</background>
@@ -293,6 +294,7 @@
       <object>objects\RockShockwave</object>
       <object>objects\SaveObject</object>
       <object>objects\EndWarp</object>
+      <object>objects\Spore</object>
     </objects>
     <objects name="Minigame">
       <objects name="Juggling">
@@ -321,16 +323,17 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
-    <room>rooms\rushin_Granny</room>
     <room>rooms\start_screen</room>
     <room>rooms\levelOne</room>
     <room>rooms\levelTwo</room>
+    <room>rooms\levelSeven</room>
     <room>rooms\levelThree</room>
     <room>rooms\levelFour</room>
     <room>rooms\levelFive</room>
     <room>rooms\levelSix</room>
     <room>rooms\bossLevel</room>
     <room>rooms\juggling_MiniGame</room>
+    <room>rooms\rushin_Granny</room>
     <room>rooms\room8</room>
   </rooms>
   <help>
