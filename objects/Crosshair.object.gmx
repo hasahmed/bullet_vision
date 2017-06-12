@@ -115,7 +115,7 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.visible = false;
+            <string>if(controllerPriority)self.visible = false;
 </string>
           </argument>
         </arguments>

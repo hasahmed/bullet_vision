@@ -309,6 +309,7 @@
         <object>objects\grannyControl</object>
         <object>objects\Granny</object>
         <object>objects\grannyWall</object>
+        <object>objects\wallSpawner</object>
       </objects>
     </objects>
     <objects name="buttons">
@@ -323,6 +324,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
+    <room>rooms\rushin_Granny</room>
     <room>rooms\start_screen</room>
     <room>rooms\levelOne</room>
     <room>rooms\levelTwo</room>
@@ -333,7 +335,6 @@
     <room>rooms\levelSix</room>
     <room>rooms\bossLevel</room>
     <room>rooms\juggling_MiniGame</room>
-    <room>rooms\rushin_Granny</room>
     <room>rooms\room8</room>
   </rooms>
   <help>
