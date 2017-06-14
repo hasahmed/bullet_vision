@@ -51,8 +51,8 @@
             <string>if(!global.paused){
 x-=8;
 buddy=instance_place(x+sprite_width/2,y,grannyWall)
-if(buddy==noone)move_contact_solid(180,32)
-if(Granny.x-x&gt;400)instance_destroy();
+if(buddy==noone)move_contact_solid(180,1000)
+if(x&lt;-100)instance_destroy();
 bullet=instance_place(x,y,Bullet)
 if(bullet!=noone) with bullet instance_destroy()
 }

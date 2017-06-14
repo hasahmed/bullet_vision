@@ -50,8 +50,11 @@
             <kind>1</kind>
             <string>timer+=1
 if(timer%4==0){
-block=instance_place(288+960,384+64,grannyWall);
-if(block==noone)instance_create(288+960,384+64,grannyWall);
+//block=instance_place(288+960,384+64,grannyWall);
+//if(block==noone)instance_create(288+960,384+64,grannyWall);
+
+block=instance_place(x,y,grannyWall);
+if(block==noone)instance_create(x,y,grannyWall);
 }
 </string>
           </argument>

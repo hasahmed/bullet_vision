@@ -30,6 +30,7 @@
 grav=.5;
 vSpeed=-10;
 instance_create(x,y,Cursor)
+moveSpeed=3
 </string>
           </argument>
         </arguments>
@@ -53,23 +54,30 @@ instance_create(x,y,Cursor)
           <argument>
             <kind>1</kind>
             <string>y+=vSpeed;
-if(collision_rectangle(x-sprite_width/2,y+sprite_height/2,x+sprite_width/2,y+sprite_height/2+vSpeed,Wall,0,1)){
+if(collision_rectangle(x-sprite_width/2,y+sprite_height/2,x+sprite_width/2,y+sprite_height/2+vSpeed,grannyWall,0,1)){
     onGround=true;
-    move_contact_solid(270,30)
+    move_contact_all(90,30)
 }
 else onGround=false;
 
 if(!onGround){
-vSpeed+=grav;
+    vSpeed+=grav;
 }
 else vSpeed=0
 
+//Jumping
 if(keyboard_check_pressed(vk_space)&amp;&amp;onGround){
     vSpeed=-12;
 }
-if(keyboard_check_released(vk_space))vSpeed*=1/2
-if(keyboard_check(ord("W")))image_index=2
+if(keyboard_check_released(vk_space)&amp;&amp;vSpeed&lt;0)vSpeed*=1/2
+
+//Ducking
+if(keyboard_check(ord("S")))image_index=2
 else image_index=0
+
+//Movement
+if(keyboard_check(ord("A")))x-=moveSpeed
+if(keyboard_check(ord("D")))x+=moveSpeed
 </string>
           </argument>
         </arguments>

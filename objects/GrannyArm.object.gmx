@@ -55,36 +55,10 @@ image_index=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//image_angle=point_direction(x,y,mouse_x,mouse_y);
-/*if(control){
-block=instance_place(288+960,384+64,grannyWall);
-if(block==noone)instance_create(288+960,384+64,grannyWall);
-image_index=1;
-}
-
-//else {
-    image_angle=point_direction(x,y,mouse_x,mouse_y);
-
-    y+=vSpeed;
-    if(collision_point(x-30,y+Granny.sprite_height/2,grannyWall,0,1)){
-        onGround=true;
-    }
-    else onGround=false;
-
-    if(!onGround){
-    vSpeed+=grav;
-    }
-    else vSpeed=0
-
-    if(keyboard_check_pressed(vk_space)&amp;&amp;onGround){
-        vSpeed=-12;
-    }
-    if(keyboard_check_released(vk_space))vSpeed*=1/2
-    
-//}*/
-image_angle=point_direction(x,y,mouse_x,mouse_y)
-y=body.y
+            <string>image_angle=point_direction(x,y,mouse_x,mouse_y)
 x=body.x
+if(body.image_index==2)y=body.y+27
+else y=body.y
 </string>
           </argument>
         </arguments>
@@ -114,16 +88,16 @@ bullet = instance_create(25*cos(image_angle*180/pi)+x,-10*sin(image_angle*180/pi
  bullet.direction = p;
  bullet.image_angle = p;
  
-     for(i=0;i&lt;10;i+=1){
+     /*for(i=0;i&lt;10;i+=1){
         flash= instance_create(x+25*cos(image_angle*180/pi),y-10*sin(image_angle*180/pi),particle);
         flash.speed = 4 +random(3);
         flash.direction= p + random(3);
-        
-    if(!global.mute){ 
-        shot =audio_play_sound(Shoot,2,false);
-        audio_sound_gain(shot,.1,0);
-        audio_sound_pitch(Shoot, random_range(.85, 1.15));
-    }
+        */
+if(!global.mute){ 
+    shot =audio_play_sound(Shoot,2,false);
+    audio_sound_gain(shot,.1,0);
+    audio_sound_pitch(Shoot, random_range(.85, 1.15));
+    
 }
 //}
 </string>

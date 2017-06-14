@@ -76,7 +76,17 @@
     <instance objName="grannyWall" x="32" y="448" name="inst_277A00DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="grannyWall" x="0" y="448" name="inst_1C268FB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GrannyArm" x="256" y="320" name="inst_A1593FB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="wallSpawner" x="960" y="448" name="inst_D16AA4D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="wallSpawner" x="1120" y="448" name="inst_D16AA4D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="736" y="448" name="inst_41E00FE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="768" y="448" name="inst_C66E7919" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="800" y="448" name="inst_CFB5B223" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="832" y="448" name="inst_DB758618" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="864" y="448" name="inst_1E721C8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="896" y="448" name="inst_A0C69A22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="928" y="448" name="inst_C60A27EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="960" y="448" name="inst_103F26AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="992" y="448" name="inst_6D98DE36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="grannyWall" x="1024" y="448" name="inst_FA5AA236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
