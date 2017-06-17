@@ -32,6 +32,7 @@ hitTimer=100
 recoveryTimer=80
 windupTimer=75
 isAttacking=false;
+selectSide=true
 </string>
           </argument>
         </arguments>
@@ -63,18 +64,21 @@ if(flower==noone)instance_destroy()
 if(hitTimer&gt;0)hitTimer-=1
 
 //start telegraph
-if(hitTimer==0&amp;&amp;collision_rectangle(x+sprite_width/2,y-30,x,y+sprite_height/2,Player,0,1))
+if(hitTimer==0&amp;&amp;collision_rectangle(x+sprite_width/2,y-sprite_height/2,x-sprite_width/2,y+sprite_height/2,Player,0,1))
     isAttacking=true
-
 if(isAttacking){    
     if(windupTimer&gt;0){
-        image_index=1
+        if(selectSide){
+            attackDirection=sign(x-Player.x)
+            selectSide=false
+        }
+        image_index=2+attackDirection
         windupTimer-=1
     }
     
     //attack
     if(windupTimer==0){
-        image_index=2
+        image_index=3+attackDirection
         if(recoveryTimer&gt;0)recoveryTimer-=1
         if(recoveryTimer==0){
             image_index=0
@@ -82,6 +86,7 @@ if(isAttacking){
             windupTimer=75
             hitTimer=100
             isAttacking=false
+            selectSide=true
         }
     }
 }

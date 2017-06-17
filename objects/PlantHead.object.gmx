@@ -52,6 +52,11 @@ sporeTimer=250
             <string>event_inherited()
 sporeTimer-=1
 if(sporeTimer==0){
+    for(i=0;i&lt;=12;i++){
+        Particle=instance_create(x,y,particle)
+        Particle.speed=5+random(3)
+        Particle.direction=random(180)
+    }
     leftSpore=instance_create(x,y,Spore)
     midSpore=instance_create(x,y,Spore)
     rightSpore=instance_create(x,y,Spore)
