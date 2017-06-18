@@ -28,6 +28,7 @@
       <sound>sound\vulcanology</sound>
       <sound>sound\bossMusic1</sound>
       <sound>sound\sound24</sound>
+      <sound>sound\bossMusic2</sound>
     </sounds>
     <sound>sound\deathMusic</sound>
     <sound>sound\digeridoo</sound>
@@ -265,6 +266,7 @@
       <object>objects\ShockwaveEnemy</object>
       <object>objects\PlantBody</object>
       <object>objects\PlantHead</object>
+      <object>objects\BossTwo</object>
     </objects>
     <objects name="Other">
       <object>objects\particle</object>
@@ -324,6 +326,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
+    <room>rooms\bossTwoLevel</room>
     <room>rooms\rushin_Granny</room>
     <room>rooms\start_screen</room>
     <room>rooms\levelOne</room>
