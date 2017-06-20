@@ -42,14 +42,19 @@ dirChanged = false;
 downCalledOnce = false; // same deal as callDownReleased
 
 enum facing{
-    right = 0, left = 1
+    right = 1, left = -1
 } // enumeration of the directions that the player can be.
 playerDir = facing.right; // playerDirection, used to dictate which sprite is shown
 controllerPriority = false; // weather the controller has priority or not. set to true in every controller
                             // script, and false in every mouse/ keyboard script
 //heady = y + 8 - (sprite_height/2); // the rough location of the sprites head
 
-
+enum running {
+    right = 1,
+    left = -1,
+    still = 0
+}
+runningDir = running.still;
 devFunctions=false;
 
 deathTimer=155;
