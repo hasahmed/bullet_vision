@@ -54,6 +54,8 @@
       <sprite>sprites\Granny_s</sprite>
       <sprite>sprites\crosshair_s</sprite>
       <sprite>sprites\grannyArm_s</sprite>
+      <sprite>sprites\player_ss_headless</sprite>
+      <sprite>sprites\player_head</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\fallingGround_s</sprite>
@@ -236,6 +238,7 @@
     <objects name="player">
       <object>objects\Player</object>
       <object>objects\Crosshair</object>
+      <object>objects\Head</object>
     </objects>
     <objects name="Level">
       <object>objects\Wall</object>
@@ -337,6 +340,7 @@
     <room>rooms\levelFive</room>
     <room>rooms\levelSix</room>
     <room>rooms\bossLevel</room>
+    <room>rooms\rushin_Granny</room>
     <room>rooms\juggling_MiniGame</room>
     <room>rooms\room8</room>
   </rooms>
