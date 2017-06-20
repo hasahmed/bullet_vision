@@ -110,9 +110,12 @@ if Player.runningDir == Player.running.left &amp;&amp; Player.playerDir == Playe
 var rot = Player.pdir; /* the default rotation of the 
     sprite according to the players position and the mouse */
     
+    
 /* headShake is a global variable for the head object which
 is set in a script when a button is shot to control 'recoil' */
 rot = rot + headShake;
+
+//show_debug_message("rot: " + string(rot));
 
 draw_sprite_ext(
                  player_head, //sprite

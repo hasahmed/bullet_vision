@@ -181,6 +181,7 @@
         <script>scripts\knockBack_script.gml</script>
         <script>scripts\reload_script.gml</script>
         <script>scripts\headRecoil_script.gml</script>
+        <script>scripts\headRecoilShotgun_script.gml</script>
       </scripts>
     </scripts>
     <scripts name="Enemy Scripts">
