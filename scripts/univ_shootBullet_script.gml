@@ -32,6 +32,7 @@ else headx=x-sprite_width/2
     
 knockBack_script(3);
 shakeScreen_script(3, .08); // screenshake handling
+headRecoil_script(15, 35, room_speed * 0.1); //head kickback handling
 
 if (calledFromController){
     gamepad_set_vibration(0, .1, .1); //sets the controller vibration to .1

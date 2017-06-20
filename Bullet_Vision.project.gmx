@@ -180,6 +180,7 @@
         <script>scripts\shootShotgun_script.gml</script>
         <script>scripts\knockBack_script.gml</script>
         <script>scripts\reload_script.gml</script>
+        <script>scripts\headRecoil_script.gml</script>
       </scripts>
     </scripts>
     <scripts name="Enemy Scripts">

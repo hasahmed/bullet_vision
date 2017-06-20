@@ -8,6 +8,58 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///variable initialization
+
+/* headShake: to control 'recoil' of players head */
+headShake = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///reset headShake
+
+//headShake is set in headRecoil_script
+headShake = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -54,6 +106,14 @@ if Player.runningDir == Player.running.left &amp;&amp; Player.playerDir == Playe
     yoffset = Player.heady + adjusty;
 }
 
+
+var rot = Player.pdir; /* the default rotation of the 
+    sprite according to the players position and the mouse */
+    
+/* headShake is a global variable for the head object which
+is set in a script when a button is shot to control 'recoil' */
+rot = rot + headShake;
+
 draw_sprite_ext(
                  player_head, //sprite
                  -1, //subimage
@@ -61,7 +121,7 @@ draw_sprite_ext(
                  yoffset, //y
                  1, //x scale
                  Player.playerDir, //yscale
-                 Player.pdir, //roation
+                 rot, //roation
                  c_white, //image color
                  1 // alpha
                  );

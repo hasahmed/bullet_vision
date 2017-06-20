@@ -16,6 +16,7 @@ if(shotgunFireable){
     }
     shakeScreen_script(8, .15);
     knockBack_script(14);
+    headRecoil_script(25, 65, room_speed * 0.2); //head kickback handling
     shotgunFireable = false; // shotgunFireable set to true after reload sound finishes playing. 
     knockbackTimer=35;
     alarm[1] = 60 * audio_sound_length(shotgunSound); // plays reload sound only after shotgunSound has finished playing -hya
