@@ -85,6 +85,7 @@
       <sprite>sprites\barrel_s</sprite>
       <sprite>sprites\ankylosaurus_s</sprite>
       <sprite>sprites\sprite55</sprite>
+      <sprite>sprites\iceFrog_s</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\start_screen_s</sprite>
@@ -266,7 +267,7 @@
       <object>objects\burstEnemy</object>
       <object>objects\bombThrower</object>
       <object>objects\Boss</object>
-      <object>objects\SpikeEnemy</object>
+      <object>objects\IceFrog</object>
       <object>objects\ShockwaveEnemy</object>
       <object>objects\PlantBody</object>
       <object>objects\PlantHead</object>
@@ -330,6 +331,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
+    <room>rooms\levelSix</room>
     <room>rooms\bossTwoLevel</room>
     <room>rooms\rushin_Granny</room>
     <room>rooms\start_screen</room>
@@ -339,7 +341,6 @@
     <room>rooms\levelThree</room>
     <room>rooms\levelFour</room>
     <room>rooms\levelFive</room>
-    <room>rooms\levelSix</room>
     <room>rooms\bossLevel</room>
     <room>rooms\juggling_MiniGame</room>
     <room>rooms\room8</room>
