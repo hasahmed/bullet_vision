@@ -73,6 +73,7 @@
       <sprite>sprites\lava_s</sprite>
       <sprite>sprites\octopus_s</sprite>
       <sprite>sprites\warp_s</sprite>
+      <sprite>sprites\bossDoor_s</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\Genie_s</sprite>
@@ -112,6 +113,7 @@
     <sprite>sprites\plantBody_s</sprite>
     <sprite>sprites\plantHead_s</sprite>
     <sprite>sprites\sprite62</sprite>
+    <sprite>sprites\sprite67</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Space2_b</background>
@@ -203,7 +205,6 @@
       <scripts name="Shooting Enemies">
         <script>scripts\initializeShootingEnemyValues_script.gml</script>
         <script>scripts\enemyShoot_script.gml</script>
-        <script>scripts\burstEnemyShoot_script.gml</script>
       </scripts>
       <scripts name="Boss Scripts">
         <script>scripts\bossDefaultMovement_script.gml</script>
@@ -257,6 +258,7 @@
       <object>objects\TextBoxTrigger</object>
       <object>objects\ParralaxHandler</object>
       <object>objects\Warp</object>
+      <object>objects\BossDoor</object>
     </objects>
     <objects name="Enemies">
       <object>objects\WalkingEnemy</object>
@@ -264,7 +266,6 @@
       <object>objects\flyingEnemy</object>
       <object>objects\shootingEnemy</object>
       <object>objects\Wall_p</object>
-      <object>objects\burstEnemy</object>
       <object>objects\bombThrower</object>
       <object>objects\Boss</object>
       <object>objects\IceFrog</object>
@@ -328,11 +329,12 @@
       <object>objects\ButtonContinue</object>
     </objects>
     <object>objects\DevUtil</object>
+    <object>objects\BossIntroToggler</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
-    <room>rooms\levelSix</room>
     <room>rooms\bossTwoLevel</room>
+    <room>rooms\levelSix</room>
     <room>rooms\rushin_Granny</room>
     <room>rooms\start_screen</room>
     <room>rooms\levelOne</room>

@@ -51,9 +51,9 @@ image_yscale*=2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_index&gt;=6){
+            <string>if(image_index&gt;=4){
     dangerous=true//so that you don't get hurt by early frames
-    image_speed=.2
+    image_speed=.25
 }
 if(dangerous&amp;&amp;instance_place(x,y,Player))getHit_script(20,3,.3)
 if (image_index &gt; image_number - 1) instance_destroy();

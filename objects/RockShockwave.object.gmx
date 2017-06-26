@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited()
-image_xscale*=.5
-image_yscale*=.5
+image_xscale*=.1
+image_yscale*=.1
 goLeft=false;
 goRight=false;
 image_speed=.5
@@ -53,19 +53,19 @@ image_speed=.5
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_index==image_number-1){
-    if(instance_place(x-sprite_width,y+1,Wall)){
+            <string>if(image_index==image_number-2){
+    if(instance_place(x-sprite_width,y+10,Wall)){
         if(goLeft){
             shockwave=instance_create(x-sprite_width,y,RockShockwave)
             shockwave.goLeft=true
         }
     }
-    if(instance_place(x+sprite_width,y+1,Wall)){
+    if(instance_place(x+sprite_width,y+10,Wall)){
         if(goRight){
             shockWave=instance_create(x+sprite_width,y,RockShockwave)
             shockWave.goRight=true
         }
-    }    
+    }
 }
 event_inherited()
 image_blend=c_gray

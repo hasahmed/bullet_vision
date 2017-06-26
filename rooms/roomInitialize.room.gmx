@@ -29,16 +29,8 @@ global.miniGamesUnlocked=false;
 
 //window_set_fullscreen(true)
 global.lastTouchedBlock=noone
-//SAVING INFORMATION
 
-
-/*
-find out how to get app.data directory in gamemaker and set the file to there
-possibly add a slash
-ini_open()
-global.currentRoom=ini_read_real(section,key,default)
-ini_close()
-*/</code>
+global.bossTwoIntro=true</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
