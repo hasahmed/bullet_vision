@@ -1,4 +1,3 @@
-
 if (onGround && numJumpsPerSpacePressed < 1)
 {
    numJumpsPerSpacePressed++;
@@ -6,7 +5,7 @@ if (onGround && numJumpsPerSpacePressed < 1)
        audio_play_sound(Jump,2,false)
        audio_sound_pitch(Jump, random_range(.9, 1.1));
    }
-   
    vSpeed = -jumpPower;
    fallOffEdgeTimer = -1;
+   blurTimer=5
 }

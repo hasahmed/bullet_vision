@@ -54,6 +54,7 @@
       <sprite>sprites\crosshair_s</sprite>
       <sprite>sprites\grannyArm_s</sprite>
       <sprite>sprites\player_ss_headless</sprite>
+      <sprite>sprites\player_with_jump</sprite>
       <sprite>sprites\player_head</sprite>
     </sprites>
     <sprites name="Level">
@@ -211,6 +212,7 @@
         <script>scripts\attackOne_script.gml</script>
         <script>scripts\attackTwo_script.gml</script>
         <script>scripts\parabolicMovement_script.gml</script>
+        <script>scripts\bossTwoAttackOne.gml</script>
       </scripts>
     </scripts>
     <scripts name="Bomb Scripts">

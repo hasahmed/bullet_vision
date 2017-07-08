@@ -64,3 +64,5 @@ octopusOnHead=true;//enables an octopus to stick to your head
 movingPlatformCollision=false;
 
 myDirection=0;
+
+blurTimer=-1;

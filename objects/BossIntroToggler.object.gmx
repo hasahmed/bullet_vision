@@ -59,6 +59,7 @@ if(!global.bossTwoIntro){
             <string>if(collision_rectangle(x+100,y-1000,x+2000,y+280,Player,0,1)){
     global.bossTwoIntro=false
     instance_create(x-32,y,BossDoor)
+    instance_destroy();
 }
 </string>
           </argument>
