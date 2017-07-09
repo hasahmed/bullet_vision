@@ -53,7 +53,8 @@ image_speed=.5
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_index==image_number-2){
+            <string>if(!global.paused){
+if(image_index==image_number-2){
     if(instance_place(x-sprite_width,y+10,Wall)){
         if(goLeft){
             shockwave=instance_create(x-sprite_width,y,RockShockwave)
@@ -66,6 +67,7 @@ image_speed=.5
             shockWave.goRight=true
         }
     }
+}
 }
 event_inherited()
 image_blend=c_gray

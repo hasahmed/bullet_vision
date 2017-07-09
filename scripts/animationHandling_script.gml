@@ -1,3 +1,12 @@
+if(blurTimer>0){
+    if (playerDir == facing.right){
+        image_index=28
+    }
+    else{
+        image_index=29
+    }     
+}
+else{
 if(onGround){
     if(!global.mute){
         if(floor(image_index)==11||floor(image_index)==16||floor(image_index)==21||floor(image_index)==26&&!audio_is_playing(footstep3))
@@ -50,7 +59,7 @@ if(onGround){
     }
 }
 else{
-    if(blurTimer<=0){
+    //if(blurTimer<=0){
         if(playerDir == facing.right){
             image_index=30
         }
@@ -58,13 +67,14 @@ else{
             image_index=31
         }
     }
-    else{
+    /*else{
         if (playerDir == facing.right){
             image_index=28
         }
         else{
             image_index=29
         }
-    }
+    }*/
+//}
 }
 if(blurTimer>0)blurTimer-=1

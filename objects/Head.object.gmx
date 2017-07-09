@@ -79,6 +79,7 @@ headShake = 0;
             <kind>1</kind>
             <string>///draw the head
 
+if(!global.paused){
 //adjust the xoffset if the player is facing left
 // its all magic numbers
 var xoffset = Player.headx;
@@ -128,6 +129,7 @@ draw_sprite_ext(
                  c_white, //image color
                  1 // alpha
                  );
+}
 </string>
           </argument>
         </arguments>

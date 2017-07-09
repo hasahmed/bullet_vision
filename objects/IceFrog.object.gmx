@@ -54,9 +54,11 @@ range=800
           <argument>
             <kind>1</kind>
             <string>event_inherited()
+if(!global.paused){
 makeSpike_script()
 image_speed=.2
 if(image_index&gt;=5)image_index=0
+}
 </string>
           </argument>
         </arguments>

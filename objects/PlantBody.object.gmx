@@ -55,7 +55,8 @@ selectSide=true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_place(x,y,Player))getHit_script(12,3,.3)
+            <string>if(!global.paused){
+if(instance_place(x,y,Player))getHit_script(12,3,.3)
 bullet=instance_place(x,y,Bullet)
 if(bullet!=noone) with bullet instance_destroy()
 flower=instance_place(x,y,PlantHead)
@@ -89,6 +90,7 @@ if(isAttacking){
             selectSide=true
         }
     }
+}
 }
 </string>
           </argument>

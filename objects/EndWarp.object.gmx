@@ -55,7 +55,8 @@ Player.maxSpeed=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Player.hSpeed=0
+            <string>if(!global.paused){
+Player.hSpeed=0
 Player.vSpeed=0
 //Player.x=x
 //Player.y=y
@@ -85,6 +86,7 @@ if(image_index&gt;=image_number-1){
         room_goto(start_screen);
     }
     else room_goto_next();
+}
 }
 </string>
           </argument>

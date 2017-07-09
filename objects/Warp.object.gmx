@@ -61,7 +61,7 @@ if !SaveObject.gameWasLoaded {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if(!global.paused){
 
 if(image_index&lt;28){
     Player.vSpeed=-1
@@ -97,6 +97,7 @@ if imx != floor(self.image_index)
     indexChanged = true;
 
 imx = floor(self.image_index);
+}
 </string>
           </argument>
         </arguments>

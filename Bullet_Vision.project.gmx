@@ -238,6 +238,7 @@
       <script>scripts\saveAssign_script.gml</script>
       <script>scripts\save_script.gml</script>
     </scripts>
+    <script>scripts\script73.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="player">

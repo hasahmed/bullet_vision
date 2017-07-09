@@ -56,7 +56,6 @@ if(!global.paused){
     spawnHealth_script();
     image_speed=.5;
 }
-else image_speed=0;
 
 if(abs(x-Player.x)&lt;800&amp;&amp;abs(y-Player.y)&lt;800)isPlaying=true;
 

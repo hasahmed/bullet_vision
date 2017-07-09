@@ -9,13 +9,14 @@ if (collision_rectangle(x + (sprite_width / 2) -1,
     false,
     true) != noone)
     {
-        //vSpeed = 0;
-        
+
         if (sign(vSpeed) == -1){
             vSpeed = 0;
-           move_contact_solid(90,0);
+            move_contact_solid(90,0);
+            blurTimer=5 //activates blur sprite for 5 frames
         }
         else {
+
             move_contact_solid(270,0);
             if(vSpeed>0&&!global.mute&&!audio_is_playing(thud))audio_play_sound(thud,2,0);
             vSpeed=0;
@@ -40,16 +41,7 @@ if (collision_rectangle(x + (sprite_width / 2),
         inAirJumps = maxInAirJumps;
         fallOffEdgeTimer = fallOffEdgeTimerMax;
     }
-
-/*
-var wallId = instance_place(x, (y + (sprite_height/2)) + (vSpeed * global.delta), Wall);
-if(wallId != noone){
-    //y = wallId.y - (wallId.sprite_height/2) - (sprite_height/2);
-    onGround = true;
-    inAirJumps = maxInAirJumps;
-    fallOffEdgeTimer = fallOffEdgeTimerMax;
-}
-*/
+    
 else
 {
     onGround = false;
@@ -57,8 +49,6 @@ else
 
 
 //Check for horizontal collision
-// needs work: doesn't work going left
-// suspect because player image is reversed, but collision box does not reflect that
 if (collision_rectangle(x + (sprite_width / 2) * sign(hSpeed),y + (sprite_height / 2) - 1,
     x + ((sprite_width / 2)  + abs(hSpeed)) * sign(hSpeed),
     y - (sprite_height / 2) + 1,
@@ -66,9 +56,5 @@ if (collision_rectangle(x + (sprite_width / 2) * sign(hSpeed),y + (sprite_height
     false,
     true) != noone)
     {
-        hSpeed = 0;
-        //movingPlatformCollision=true;
+        hSpeed = 0
     }
-    
-//if(collision_line(x+sprite_width/2+1,y-sprite_height/2+3,x+sprite_width/2+1,y+sprite_height/2,Wall,0,1)) movingPlatformCollision=true;
-//else movingPlatformCollision=false;
