@@ -1,9 +1,11 @@
 if(blurTimer>0){
     if (playerDir == facing.right){
         image_index=28
+        myDirection=0;
     }
     else{
         image_index=29
+        myDirection=1;
     }     
 }
 else{
@@ -62,9 +64,11 @@ else{
     //if(blurTimer<=0){
         if(playerDir == facing.right){
             image_index=30
+            myDirection=0;
         }
         else{
             image_index=31
+            myDirection = 1;
         }
     }
     /*else{

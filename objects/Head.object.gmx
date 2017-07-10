@@ -29,6 +29,7 @@
 
 /* headShake: to control 'recoil' of players head */
 headShake = 0;
+rot=0
 </string>
           </argument>
         </arguments>
@@ -78,58 +79,30 @@ headShake = 0;
           <argument>
             <kind>1</kind>
             <string>///draw the head
+x=Player.headx
+y=Player.heady
 
 if(!global.paused){
-//adjust the xoffset if the player is facing left
-// its all magic numbers
-var xoffset = Player.headx;
-var yoffset = Player.heady;
-var runningOffset = Player.headx;
-
- /* adjust: so i don't have to change more than two
- variables to make my adjustments */
-var adjustx = 8;
-var adjusty = 4;
-
-/* put the head in the right place when facing
-left. By default its set for right */
-if Player.playerDir == Player.facing.left 
-    xoffset = Player.headx - 10;
-    
-/* put the head in the right place when running */
-if Player.runningDir == Player.running.right &amp;&amp; Player.playerDir == Player.facing.right {
-    xoffset = Player.headx + adjustx;
-    yoffset = Player.heady + adjusty;
-}
-
-if Player.runningDir == Player.running.left &amp;&amp; Player.playerDir == Player.facing.left {
-    xoffset = xoffset - (adjustx -2);
-    yoffset = Player.heady + adjusty;
-}
-
-
-var rot = Player.pdir; /* the default rotation of the 
+rot = Player.pdir; /* the default rotation of the 
     sprite according to the players position and the mouse */
-    
+} 
     
 /* headShake is a global variable for the head object which
 is set in a script when a button is shot to control 'recoil' */
 rot = rot + headShake;
 
-//show_debug_message("rot: " + string(rot));
-
+if(Player.image_xscale!=0)//so that it doesn't draw the head when you're dead
 draw_sprite_ext(
                  player_head, //sprite
                  -1, //subimage
-                 xoffset, //x
-                 yoffset, //y
+                 x, //x
+                 y+2, //y
                  1, //x scale
                  Player.playerDir, //yscale
                  rot, //roation
                  c_white, //image color
                  1 // alpha
-                 );
-}
+                 )
 </string>
           </argument>
         </arguments>

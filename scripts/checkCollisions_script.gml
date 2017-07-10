@@ -10,21 +10,19 @@ if (collision_rectangle(x + (sprite_width / 2) -1,
     true) != noone)
     {
 
-        if (sign(vSpeed) == -1){
+        if (sign(vSpeed) == -1){//hitting ceiling
             vSpeed = 0;
             move_contact_solid(90,0);
-            blurTimer=5 //activates blur sprite for 5 frames
+          
         }
-        else {
-
+        else if(sign(vSpeed)==1) {//landing
+            blurTimer=3 //activates blur sprite for 5 frames
             move_contact_solid(270,0);
             if(vSpeed>0&&!global.mute&&!audio_is_playing(thud))audio_play_sound(thud,2,0);
             vSpeed=0;
         }
-
-        
-        
     }
+
     
 //Check if standing on a wall
 

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var iSpeed = 0.30;
+            <string>iSpeed = 0.30;
 self.image_speed = iSpeed;
 
 scaleFactor = 1 / 16;
@@ -62,7 +62,7 @@ if !SaveObject.gameWasLoaded {
           <argument>
             <kind>1</kind>
             <string>if(!global.paused){
-
+self.image_speed = iSpeed;
 if(image_index&lt;28){
     Player.vSpeed=-1
     Player.hSpeed=10
@@ -98,6 +98,7 @@ if imx != floor(self.image_index)
 
 imx = floor(self.image_index);
 }
+else image_speed=0
 </string>
           </argument>
         </arguments>

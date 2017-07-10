@@ -9,10 +9,10 @@ var calledFromController = argument1;
 Crosshair.controllerPriority = calledFromController;
 var heady = y + 10 - (sprite_height/2);
 
-if(myDirection==0)headx=x+13
+/*if(myDirection==0)headx=x+13
 else if (myDirection==1)headx=x-20
 else if (myDirection==2)headx=x+sprite_width/2
-else headx=x-sprite_width/2
+else headx=x-sprite_width/2*/
 
 
  bullet = instance_create(headx, heady, Bullet);

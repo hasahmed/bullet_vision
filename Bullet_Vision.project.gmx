@@ -243,8 +243,10 @@
   <objects name="objects">
     <objects name="player">
       <object>objects\Player</object>
-      <object>objects\Crosshair</object>
       <object>objects\Head</object>
+      <object>objects\backupHead</object>
+      <object>objects\backupPlayer</object>
+      <object>objects\Crosshair</object>
     </objects>
     <objects name="Level">
       <object>objects\Wall</object>

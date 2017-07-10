@@ -204,9 +204,14 @@ pause functionality for the controller. see
 the script for more info */
 padPauseHandler_script();
 
-headx = self.x + 4;
 var yoffset = 10;
 heady = (y + yoffset + head.sprite_height/2) - (sprite_height/2); //for head position
+if(myDirection==0)headx=x+6
+else if (myDirection==1)headx=x-6
+else if (myDirection==2)headx=x+13
+else headx=x-13
+if(myDirection&gt;1)heady+=4//so head lowers when running
+
 pdir = point_direction(headx, heady, mouse_x, mouse_y); // for head rotation
 
 </string>
@@ -233,7 +238,7 @@ pdir = point_direction(headx, heady, mouse_x, mouse_y); // for head rotation
             <kind>1</kind>
             <string>/// shoot shotgun script
 if(!global.paused){
-    shootShotgun_script();
+    univ_shootShotgun_script(point_direction(x,y,mouse_x,mouse_y),false);
 }
 </string>
           </argument>
@@ -259,7 +264,7 @@ if(!global.paused){
             <kind>1</kind>
             <string>/// shoot bullet script
 if(!global.paused){
-    shootBullet_script();
+    univ_shootBullet_script(point_direction(x,y,mouse_x,mouse_y),false);
 }
 </string>
           </argument>
@@ -310,6 +315,8 @@ if(!global.paused){
     draw_sprite_ext(heart_s, -1, 20 + 40 * i, 20, 1, 1, 0, c_white, 1);
 }
 draw_text(100,100,myDirection)
+draw_text(100,150,headx-x)
+draw_text(100,200,Head.rot)
 </string>
           </argument>
         </arguments>
