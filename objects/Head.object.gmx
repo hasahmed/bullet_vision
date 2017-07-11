@@ -30,6 +30,8 @@
 /* headShake: to control 'recoil' of players head */
 headShake = 0;
 rot=0
+col=c_white
+myXScale=0
 </string>
           </argument>
         </arguments>
@@ -87,20 +89,26 @@ rot = Player.pdir; /* the default rotation of the
     sprite according to the players position and the mouse */
 } 
     
+if(instance_place(x,y,Warp)) myXScale=0//so the head isn't visible in the warp and we can just use the sprite
+else var myXScale=1
+
+var endWarp=instance_place(x,y,EndWarp)
+if(endWarp!=noone&amp;&amp;endWarp.image_index&gt;10)var myXScale=0
 /* headShake is a global variable for the head object which
 is set in a script when a button is shot to control 'recoil' */
 rot = rot + headShake;
 
+col=Player.image_blend
 if(Player.image_xscale!=0)//so that it doesn't draw the head when you're dead
 draw_sprite_ext(
                  player_head, //sprite
                  -1, //subimage
                  x, //x
                  y+2, //y
-                 1, //x scale
+                 myXScale, //x scale
                  Player.playerDir, //yscale
                  rot, //roation
-                 c_white, //image color
+                 col, //image color
                  1 // alpha
                  )
 </string>

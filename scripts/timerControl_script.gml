@@ -25,8 +25,12 @@ if(invincibilityTimer>=0){
     //this next function causes the flashing
     if(round(invincibilityTimer/3)%2==0){
         image_blend = c_red;
+        Head.col = c_red
     }
-    else image_blend = c_white;
+    else {
+        image_blend = c_white;
+        Head.col = c_white
+    }
     
     
 }

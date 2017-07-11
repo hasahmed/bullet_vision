@@ -63,11 +63,12 @@ if !SaveObject.gameWasLoaded {
             <kind>1</kind>
             <string>if(!global.paused){
 self.image_speed = iSpeed;
+Player.invincibilityTimer=4
 if(image_index&lt;28){
     Player.vSpeed=-1
     Player.hSpeed=10
     Player.image_angle-=12
-    Player.image_index=13
+    Player.image_index=32
     Player.x = x
     Player.y = y
 }
@@ -91,7 +92,10 @@ if(image_index &gt;= 28){
     //with self instance_destroy();
 }
 
-if(image_index &gt;= image_number-1) with self instance_destroy()
+if(image_index &gt;= image_number-1) {
+    Player.invincibilityTimer=-1
+    with self instance_destroy()
+}
 
 if imx != floor(self.image_index)
     indexChanged = true;

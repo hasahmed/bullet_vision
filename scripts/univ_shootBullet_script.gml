@@ -14,7 +14,7 @@ else if (myDirection==1)headx=x-20
 else if (myDirection==2)headx=x+sprite_width/2
 else headx=x-sprite_width/2*/
 
-
+if(!instance_place(x,y,Warp)){
  bullet = instance_create(headx, heady, Bullet);
 // bullet.speed = 25 * global.delta;
  bullet.Speed = 25; //Speed is our own value, always 25 regardless of delta_time. FR independence is established in the bullet step event
@@ -43,5 +43,6 @@ if (calledFromController){
 if(!global.mute){ 
     audio_play_sound(Shoot5,2,false);
     audio_sound_pitch(Shoot5, random_range(.85, 1.15));
+}
 }
 }

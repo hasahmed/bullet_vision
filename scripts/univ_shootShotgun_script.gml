@@ -8,7 +8,7 @@ var calledFromController = argument1;
 else if (myDirection==1)headx=x-20
 else if (myDirection==2)headx=x+sprite_width/2
 else headx=x-sprite_width/2*/
-
+if(!instance_place(x,y,Warp)){
 if(shotgunFireable){
     if (calledFromController){
         gamepad_set_vibration(0, .8, .8);
@@ -54,4 +54,5 @@ if(shotgunFireable){
         casing.hSpeed=3-random(6)
         casing.image_blend=c_red
     }*/
+}
 }
