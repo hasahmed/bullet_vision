@@ -1,4 +1,8 @@
-if(spikeTimer>0)spikeTimer -=1
+if(spikeTimer>0){
+    spikeTimer -=1
+    if(instance_place(Player.x, Player.y + Player.sprite_height / 2, Wall)!= noone) 
+        lastTouchedBlock = instance_place(Player.x, Player.y + Player.sprite_height / 2, Wall)
+}
 if(spikeTimer==0){
     //stop enemy
     storedHSpeed=hSpeed
@@ -7,7 +11,7 @@ if(spikeTimer==0){
     spikeTimer=rateOfFire
     
     //create spike
-    if(distance_to_object(Player)<range)instance_create(global.lastTouchedBlock.x,global.lastTouchedBlock.y,Spike)
+    if(distance_to_object(Player)<range)instance_create(lastTouchedBlock.x,lastTouchedBlock.y,Spike)
 }
 //move again
 if(spikeTimer==rateOfFire-60)hSpeed=storedHSpeed

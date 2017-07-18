@@ -54,7 +54,7 @@ instance_create(x,y,HorizontalTrack)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 if(x&gt;rightBound||x&lt;leftBound)moveSpeed*=-1;
 
 x+=moveSpeed;

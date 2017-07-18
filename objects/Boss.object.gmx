@@ -76,7 +76,7 @@ attack=defaultMovement;//this determines which script is called
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 if(hp&lt;=0) instance_create(x,y,FallingPortal);
 event_inherited();
 percentHP=100*hp/maxHP;//for healthBar

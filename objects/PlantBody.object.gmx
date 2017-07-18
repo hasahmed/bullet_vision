@@ -55,7 +55,7 @@ selectSide=true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 if(instance_place(x,y,Player))getHit_script(12,3,.3)
 bullet=instance_place(x,y,Bullet)
 if(bullet!=noone) with bullet instance_destroy()

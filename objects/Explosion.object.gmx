@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 hitPlayer = instance_place(x,y,Player);
 if(hitPlayer!=noone){
     getHit_script(17,0,0);

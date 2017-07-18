@@ -41,7 +41,7 @@
             <kind>1</kind>
             <string>if(Player.hp&lt;Player.maxHp){
     Player.hp+=1;
-    if(!global.mute)audio_play_sound(Heal,3,false);
+    if(!control.mute)audio_play_sound(Heal,3,false);
 };
 </string>
           </argument>

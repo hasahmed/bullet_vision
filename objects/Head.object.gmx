@@ -84,7 +84,7 @@ headShake = 0;
 x=Player.headx
 y=Player.heady
 
-if(!global.paused){
+if(!control.paused){
 rot = Player.pdir; /* the default rotation of the 
     sprite according to the players position and the mouse */
 } 

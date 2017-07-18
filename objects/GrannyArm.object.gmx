@@ -93,7 +93,7 @@ bullet = instance_create(25*cos(image_angle*180/pi)+x,-10*sin(image_angle*180/pi
         flash.speed = 4 +random(3);
         flash.direction= p + random(3);
         */
-if(!global.mute){ 
+if(!control.mute){ 
     shot =audio_play_sound(Shoot,2,false);
     //audio_sound_gain(shot,.1,0);
     audio_sound_pitch(Shoot, random_range(.85, 1.15));

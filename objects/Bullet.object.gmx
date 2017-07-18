@@ -58,7 +58,7 @@ This function checks to see if there is an enemy at the bullet's location.
 In particular, the variable 'hit' takes on the identity of the thing the bullet is
 colliding with. So 'hit.hp -=1' reduces the enemy's hp by 1
 **************************************************************************/
-if(!global.paused){
+if(!control.paused){
 var deathDistance = 800;// distance before bullet is destoryed
 var distance = point_distance(startingX, startingY, x, y);
 hit = instance_place(x,y,Baddie);

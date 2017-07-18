@@ -52,7 +52,7 @@ Speed=15 + random(4);
           <argument>
             <kind>1</kind>
             <string>///destroy and speed logic
-if(!global.paused){
+if(!control.paused){
 event_inherited();
 deathDistance = 200;
 shotgunTimer -=1 

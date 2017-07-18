@@ -58,7 +58,7 @@ depth=Wall.depth
             <kind>1</kind>
             <string>//not doing event_inherited because I don't want to be able to shoot these dudes
 //hit player
-if(!global.paused){
+if(!control.paused){
 image_speed=.15;
 
 if(instance_place(x,y,Player)){
@@ -69,7 +69,7 @@ distance=Player.x-x;
 verticalDistance=Player.y-y;
 
 //make ting sound
-if (instance_place(x,y,Bullet)&amp;&amp;!global.mute) audio_play_sound(clank,2,0);
+if (instance_place(x,y,Bullet)&amp;&amp;!control.mute) audio_play_sound(clank,2,0);
 
 //throw bombs
 if(throw==0&amp;&amp;abs(x-Player.x&lt;650)){

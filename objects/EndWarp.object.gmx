@@ -55,7 +55,7 @@ Player.maxSpeed=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 Player.hSpeed=0
 Player.vSpeed=0
 Player.invincibilityTimer=4
@@ -81,6 +81,7 @@ if(image_index&gt;28)Player.visible=false;
 if(image_index&gt;=image_number-1){
     audio_stop_sound(fuse);
     audio_stop_sound(digeridoo);
+    global.mute=control.mute
     if(lastLevel){
         global.checkpointR=room;
         global.miniGamesUnlocked=true;

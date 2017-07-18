@@ -2,6 +2,6 @@
 if(!onGround &&fallOffEdgeTimer>0&&numJumpsPerSpacePressed<1){
     numJumpsPerSpacePressed++;
     vSpeed = -10;
-    if(!global.mute)audio_play_sound(Jump,2,false);
+    if(!control.mute)audio_play_sound(Jump,2,false);
     blurTimer=5
 }

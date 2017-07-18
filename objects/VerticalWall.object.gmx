@@ -54,7 +54,7 @@ instance_create(x,y,VerticalTrack);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 if(y&gt;lowerBound)moveSpeed*=-1;
 if(y&lt;upperBound)moveSpeed*=-1;
 

@@ -244,8 +244,6 @@
     <objects name="player">
       <object>objects\Player</object>
       <object>objects\Head</object>
-      <object>objects\backupHead</object>
-      <object>objects\backupPlayer</object>
       <object>objects\Crosshair</object>
     </objects>
     <objects name="Level">
@@ -254,10 +252,11 @@
       <object>objects\Checkpoint</object>
       <object>objects\Portal</object>
       <object>objects\Fill</object>
-      <object>objects\Control</object>
+      <object>objects\control</object>
       <object>objects\FallingWall</object>
       <object>objects\VerticalWall</object>
       <object>objects\HorizontalWall</object>
+      <object>objects\Wall_p</object>
       <object>objects\FallingPortal</object>
       <object>objects\signPost</object>
       <object>objects\TextBoxTrigger</object>
@@ -270,7 +269,6 @@
       <object>objects\Baddie</object>
       <object>objects\flyingEnemy</object>
       <object>objects\shootingEnemy</object>
-      <object>objects\Wall_p</object>
       <object>objects\bombThrower</object>
       <object>objects\Boss</object>
       <object>objects\IceFrog</object>
@@ -301,7 +299,6 @@
       <object>objects\Cursor</object>
       <object>objects\FlashEffect</object>
       <object>objects\Casing</object>
-      <object>objects\MuteHandler</object>
       <object>objects\CasingDestroyer</object>
       <object>objects\Spike</object>
       <object>objects\RockShockwave</object>

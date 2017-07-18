@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 x-=8;
 buddy=instance_place(x+sprite_width/2,y,grannyWall)
 if(buddy==noone)move_contact_solid(180,1000)

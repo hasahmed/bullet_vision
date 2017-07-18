@@ -1,7 +1,7 @@
 if(shotTimer==0){
     
     shotTimer= rateOfFire
-    if(!global.mute){
+    if(!control.mute){
         audio_play_sound(LaserShot,2,false)
         audio_sound_pitch(LaserShot, random_range(.85, 1.15));
     }

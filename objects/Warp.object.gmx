@@ -61,7 +61,7 @@ if !SaveObject.gameWasLoaded {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 self.image_speed = iSpeed;
 Player.invincibilityTimer=4
 if(image_index&lt;28){

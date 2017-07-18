@@ -57,7 +57,7 @@ onHorizWall=false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!onGround&amp;&amp;!global.paused){
+            <string>if(!onGround&amp;&amp;!control.paused){
 
     //movement 
     x+=hSpeed;
@@ -72,7 +72,7 @@ onHorizWall=false
     if(collision_line(x+3,y+vSpeed,x-3,y+vSpeed,Wall,0,1)){
         
         //play sound on first bounce
-        if(playSound&amp;&amp;!global.mute){
+        if(playSound&amp;&amp;!control.mute){
             sfx = audio_play_sound(casing_sfx, 2, false);
             audio_sound_pitch(sfx, random_range(0.95, 1.05));
             playSound=false//stops it from repeating

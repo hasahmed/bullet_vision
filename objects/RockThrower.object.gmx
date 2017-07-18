@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 throwTimer-=1;
 image_speed=0;
 verticalDistance=Player.y-y

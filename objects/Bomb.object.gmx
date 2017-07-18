@@ -50,7 +50,7 @@ wallCollided=false;
 
 //play fuse sound. Set using variable noise so that we can turn it off when the bomb explodes
 
-if(!global.mute){
+if(!control.mute){
     noise = audio_play_sound(fuse,.5,0);
 }
 else noise=noone;
@@ -76,7 +76,7 @@ else noise=noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 image_speed=.15;
 moveBomb_script();
 explode_script(thrownByBoss);

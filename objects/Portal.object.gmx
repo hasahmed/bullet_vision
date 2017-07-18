@@ -86,6 +86,7 @@ if(makeWarp){
     portal=instance_create(x,y,EndWarp);
     if(lastLevel)portal.lastLevel=true;
     makeWarp=false;
+    
 }
 </string>
           </argument>

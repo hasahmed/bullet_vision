@@ -53,7 +53,7 @@ image_index+=random(7)
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-if(!global.paused){
+if(!control.paused){
     if(distance_to_object(Player)&lt;range){
         enemyShoot_script();
     }

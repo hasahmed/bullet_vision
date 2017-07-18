@@ -195,7 +195,7 @@ alarm[0] = -1; // turns off alarm 1
 else image_speed=0;
 
 //check to see if player's y is greater than killz. If so reset the room
-if(y &gt; Control.killz||hp&lt;=0||instance_place(x,y,Lava)){
+if(y &gt; control.killz||hp&lt;=0||instance_place(x,y,Lava)){
     playerDeath_script();
 }
 

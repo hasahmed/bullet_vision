@@ -54,7 +54,7 @@ hp=5
           <argument>
             <kind>1</kind>
             <string>event_inherited()
-if(!global.paused){
+if(!control.paused){
 makeShockwave_script()
 }
 </string>

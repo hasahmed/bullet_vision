@@ -29,8 +29,8 @@
 rateOfFire=230
 spikeTimer=60
 hSpeed*=1.3
-image_yscale*=.9
 range=800
+lastTouchedBlock=noone
 </string>
           </argument>
         </arguments>
@@ -54,7 +54,7 @@ range=800
           <argument>
             <kind>1</kind>
             <string>event_inherited()
-if(!global.paused){
+if(!control.paused){
 makeSpike_script()
 image_speed=.2
 if(image_index&gt;=5)image_index=0

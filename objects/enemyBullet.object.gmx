@@ -52,7 +52,7 @@ image_speed=.2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
     speed=10;
     hit = instance_place(x,y,Player);
     if (hit != noone &amp;&amp; hit.invincibilityTimer==-1){

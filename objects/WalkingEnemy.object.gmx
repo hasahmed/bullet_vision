@@ -52,7 +52,7 @@ image_index+=random(3)
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-if(!global.paused){
+if(!control.paused){
     moveEnemy_script();
     enemyCollisions_script();
     image_xscale=sign(hSpeed);

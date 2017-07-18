@@ -53,7 +53,7 @@
   <instances>
     <instance objName="Player" x="96" y="1120" name="inst_9806C301" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="HorizontalWall" x="96" y="1184" name="inst_A36B41A7" locked="0" code="rightBound=x+6000&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Control" x="64" y="992" name="inst_C24C86BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="control" x="64" y="992" name="inst_C24C86BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="672" y="1152" name="inst_55FFB938" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="672" y="1088" name="inst_44AE3C81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="672" y="1120" name="inst_59450313" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

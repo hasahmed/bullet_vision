@@ -10,8 +10,8 @@ if(blurTimer>0){
 }
 else{
 if(onGround){
-    if(!global.mute){
-        if(floor(image_index)==11||floor(image_index)==16||floor(image_index)==21||floor(image_index)==26&&!audio_is_playing(footstep3))
+    if(!control.mute){
+        if((floor(image_index)==11||floor(image_index)==16||floor(image_index)==21||floor(image_index)==26)&&!audio_is_playing(footstep3))
             audio_play_sound(footstep3, 1, 0);
         
     }

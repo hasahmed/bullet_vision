@@ -77,7 +77,7 @@ alarm[0] = -1;
           <argument>
             <kind>1</kind>
             <string>///camera handling
-if(!global.paused){
+if(!control.paused){
 
 
 var swingSpeed = 15; // the speed that the camera switched from one side to the other

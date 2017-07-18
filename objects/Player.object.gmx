@@ -126,7 +126,7 @@ alarm[2]=-1
           <argument>
             <kind>1</kind>
             <string>//reload sound
-if (!global.mute) {
+if (!control.mute) {
     audio_play_sound(shotgunReload_sfx, 2, 0);
     audio_sound_pitch(shotgunReload_sfx, random_range(1, 1.1));
 }
@@ -179,7 +179,7 @@ alarm[0] = -1; // turns off alarm 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
     if(!noButtons){
         checkForKeyboardInput_script();
     }
@@ -189,13 +189,39 @@ alarm[0] = -1; // turns off alarm 1
     padListener_script();
     faceMouse_script();
     animationHandling_script();
-    if(instance_place(x, y + sprite_height / 2, Wall)!= noone) 
-        global.lastTouchedBlock = instance_place(x, y + sprite_height / 2, Wall)
+    
+    var yoffset = 10;
+    heady = (y + yoffset + head.sprite_height/2) - (sprite_height/2); //for head position
+    if(myDirection==0)headx=x+6
+        else if (myDirection==1)headx=x-6
+        else if (myDirection==2)headx=x+13
+        else headx=x-13
+    
+    if(myDirection&gt;1)heady+=4//so head lowers when running
+
+    pdir = point_direction(headx, heady, mouse_x, mouse_y); // for head rotation
+
+    var scale = sqrt(16*16+13*13)
+
+    if(playerDir==facing.right)
+        var offset = arctan2(13,16)
+    else
+        offset = -arctan2(13,16)
+
+    bulletx = headx + scale*cos(pdir*pi/180 + offset)
+    bullety = heady - scale*sin(pdir*pi/180 + offset)
+    
+    if mouse_check_button_pressed(mb_left){
+        univ_shootBullet_script(point_direction(bulletx,bullety,mouse_x,mouse_y),false);
+    }
+    if mouse_check_button_pressed(mb_right){
+        univ_shootShotgun_script(point_direction(bulletx,bullety,mouse_x,mouse_y),false);
+    }
 }
 else image_speed=0;
 
 //check to see if player's y is greater than killz. If so reset the room
-if(y &gt; Control.killz||hp&lt;=0||instance_place(x,y,Lava)){
+if(y &gt; control.killz||hp&lt;=0||instance_place(x,y,Lava)){
     playerDeath_script();
 }
 
@@ -203,69 +229,6 @@ if(y &gt; Control.killz||hp&lt;=0||instance_place(x,y,Lava)){
 pause functionality for the controller. see
 the script for more info */
 padPauseHandler_script();
-
-var yoffset = 10;
-heady = (y + yoffset + head.sprite_height/2) - (sprite_height/2); //for head position
-if(myDirection==0)headx=x+6
-else if (myDirection==1)headx=x-6
-else if (myDirection==2)headx=x+13
-else headx=x-13
-if(myDirection&gt;1)heady+=4//so head lowers when running
-
-pdir = point_direction(headx, heady, mouse_x, mouse_y); // for head rotation
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="54">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// shoot shotgun script
-if(!global.paused){
-    univ_shootShotgun_script(point_direction(x,y,mouse_x,mouse_y),false);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="53">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// shoot bullet script
-if(!global.paused){
-    univ_shootBullet_script(point_direction(x,y,mouse_x,mouse_y),false);
-}
 </string>
           </argument>
         </arguments>
@@ -289,6 +252,7 @@ if(!global.paused){
           <argument>
             <kind>1</kind>
             <string>drawReticle_script();
+draw_sprite(crosshair_s,0,bulletx,bullety)
 </string>
           </argument>
         </arguments>
@@ -314,32 +278,6 @@ if(!global.paused){
             <string>for (var i = 0; i &lt; hp; i++){
     draw_sprite_ext(heart_s, -1, 20 + 40 * i, 20, 1, 1, 0, c_white, 1);
 }
-draw_text(100,100,myDirection)
-draw_text(100,150,headx-x)
-draw_text(100,200,Head.rot)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="77">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//mute_script();
 </string>
           </argument>
         </arguments>

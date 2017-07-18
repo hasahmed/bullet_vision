@@ -4,10 +4,6 @@ var heady = y + 10 - (sprite_height/2); // roughly the position of the sprites h
 var p = argument0;
 var calledFromController = argument1;
 
-/*if(myDirection==0)headx=x+13
-else if (myDirection==1)headx=x-20
-else if (myDirection==2)headx=x+sprite_width/2
-else headx=x-sprite_width/2*/
 if(!instance_place(x,y,Warp)){
 if(shotgunFireable){
     if (calledFromController){
@@ -21,14 +17,14 @@ if(shotgunFireable){
     knockbackTimer=35;
     alarm[1] = 60 * audio_sound_length(shotgunSound); // plays reload sound only after shotgunSound has finished playing -hya
         
-        if(!global.mute) {
+        if(!control.mute) {
             audio_play_sound(shotgunSound,2,false);
             audio_sound_pitch(shotgunSound, random_range(.95, 1.1));
         }
     
     //create pellets
-    for(i=0;i<8;i+=1){    
-        bullet = instance_create(headx, heady, shotgunBullet);
+    repeat(8){    
+        bullet = instance_create(bulletx, bullety, shotgunBullet);
         bullet.direction = p -12.5+random(25);
         bullet.image_angle = bullet.direction;
     };
@@ -40,19 +36,11 @@ if(shotgunFireable){
     }
     
     //particle effect
-    for(i=0;i<20;i+=1){
-        flash = instance_create(headx,heady,particle);
+    repeat(20){
+        flash = instance_create(bulletx,bullety,particle);
         flash.speed = 4+random(3)+hSpeed*sign(hSpeed)/2;
         flash.direction = p - 10 + random(20);
     }
-    instance_create(headx,heady,FlashEffect)
-    instance_create(headx,heady,FlashEffect);
-    /*if(global.mute){
-        //create casing
-        casing=instance_create(headx,heady,Casing)
-        casing.vSpeed=-7+random(3)
-        casing.hSpeed=3-random(6)
-        casing.image_blend=c_red
-    }*/
+    instance_create(bulletx,bullety,FlashEffect)
 }
 }

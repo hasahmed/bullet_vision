@@ -1,5 +1,5 @@
 if(Player.invincibilityTimer<=0){//invincibilityTimer code is in timer control
-    if(!global.mute)audio_play_sound(playerHit,10,false);
+    if(!control.mute)audio_play_sound(playerHit,10,false);
     Player.hp -=1;
     Player.invincibilityTimer =40;
     if(argument0>0){

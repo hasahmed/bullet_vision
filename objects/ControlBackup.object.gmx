@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>BadSprite</maskName>
   <events>
@@ -42,7 +42,6 @@ pauseControl=false;
 drawPaused = false;
 songHeld=0;
 instance_create(0, 0, DevUtil);
-mute=global.mute
 </string>
           </argument>
         </arguments>
@@ -65,7 +64,7 @@ mute=global.mute
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if(!control.mute&amp;&amp;!paused){
+            <string>/*if(!global.mute&amp;&amp;!global.paused){
     if(global.musicSelector == 0){
         if(!audio_is_playing(Music)){
             audio_stop_sound(bossMusic1);
@@ -88,7 +87,7 @@ mute=global.mute
     }
 }*/
 
-if(!control.mute&amp;&amp;!paused){
+if(!global.mute&amp;&amp;!global.paused){
     if(global.musicSelector == 0){
         if(!audio_is_playing(Music)){
             audio_stop_all()
@@ -160,9 +159,21 @@ game_end();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(paused)
-    draw_sprite_tiled(screen_dim_s, 0, 0, 0)
-draw_text(400,400,mute)
+            <string>/// draw fps
+//if (global.debug){
+  //  draw_text(32, 32, "FPS: " + string(fps_real));
+    //draw_text(32,96, "global.delta: " + string(global.delta));
+  //  draw_text(32,96, "global.delta: " + string(readableDelta));
+//}
+
+if(pauseControl){
+    if(global.paused){
+        if(drawPaused){
+            //draw_sprite(paused_s, 0, view_wview[0] / 2, view_hview[0] / 2);
+        }
+        draw_sprite_tiled(screen_dim_s, 0, 0, 0);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -185,8 +196,8 @@ draw_text(400,400,mute)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if(pauseControl){
-    if(paused){
+            <string>if(pauseControl){
+    if(global.paused){
         //everything in this bblock is executed when the game is already paused, then
         //paused is pressed again
         
@@ -197,9 +208,9 @@ draw_text(400,400,mute)
         */
         pauseMenuTearDown_script();
         drawPaused = false;
-        paused=false;
+        global.paused=false;
         audio_stop_sound(pauseMusic);
-        if(!control.mute){//resume music
+        if(!global.mute){//resume music
             if(songHeld==0)audio_resume_sound(Music);
             else if(songHeld==1)audio_resume_sound(bossMusic1);
             else if(songHeld==2)audio_resume_sound(octopus_sound);
@@ -235,39 +246,15 @@ draw_text(400,400,mute)
             audio_pause_sound(bossMusic2)
             songHeld=3
         }
-        if(!control.mute&amp;&amp;room != juggling_MiniGame &amp;&amp; room != rushin_Granny)
+        if(!global.mute&amp;&amp;room != juggling_MiniGame &amp;&amp; room != rushin_Granny)
             audio_play_sound(pauseMusic,3,1);//play pause music
             
         audio_stop_sound(fuse);
         audio_stop_sound(digeridoo);
-        paused=true;
+        global.paused=true;
         }
     }        
-//}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="77">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>audio_stop_all()
-mute=!mute
+}
 </string>
           </argument>
         </arguments>

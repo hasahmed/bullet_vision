@@ -53,7 +53,7 @@ float=true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.paused){
+            <string>if(!control.paused){
 if(instance_place(x,y,Wall))instance_destroy()
 y+=vSpeed
 x+=hSpeed

@@ -51,7 +51,7 @@ isPlaying=false;
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-if(!global.paused){
+if(!control.paused){
     moveFlyingEnemy_script();
     spawnHealth_script();
     image_speed=.5;
@@ -68,7 +68,7 @@ if(hp&lt;=0){
     audio_stop_sound(digeridoo);
 }
 
-if(!global.paused&amp;&amp;isPlaying&amp;&amp;!global.mute&amp;&amp;!audio_is_playing(digeridoo))audio_play_sound(digeridoo,.2,0);
+if(!control.paused&amp;&amp;isPlaying&amp;&amp;!control.mute&amp;&amp;!audio_is_playing(digeridoo))audio_play_sound(digeridoo,.2,0);
 </string>
           </argument>
         </arguments>
