@@ -9,7 +9,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>57</bbox_right>
-  <bbox_top>0</bbox_top>
+  <bbox_top>1</bbox_top>
   <bbox_bottom>103</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -48,5 +48,10 @@
     <frame index="25">images\playerFinal_s_25.png</frame>
     <frame index="26">images\playerFinal_s_26.png</frame>
     <frame index="27">images\playerFinal_s_27.png</frame>
+    <frame index="28">images\playerFinal_s_28.png</frame>
+    <frame index="29">images\playerFinal_s_29.png</frame>
+    <frame index="30">images\playerFinal_s_30.png</frame>
+    <frame index="31">images\playerFinal_s_31.png</frame>
+    <frame index="32">images\playerFinal_s_32.png</frame>
   </frames>
 </sprite>

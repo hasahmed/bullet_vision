@@ -115,6 +115,7 @@
     <sprite>sprites\plantHead_s</sprite>
     <sprite>sprites\sprite62</sprite>
     <sprite>sprites\sprite67</sprite>
+    <sprite>sprites\sprite69</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Space2_b</background>
