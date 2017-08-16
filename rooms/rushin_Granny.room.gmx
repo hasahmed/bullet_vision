@@ -87,6 +87,7 @@
     <instance objName="grannyWall" x="960" y="448" name="inst_103F26AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="grannyWall" x="992" y="448" name="inst_6D98DE36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="grannyWall" x="1024" y="448" name="inst_FA5AA236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="control" x="64" y="96" name="inst_6A86E473" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

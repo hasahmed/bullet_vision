@@ -11,6 +11,8 @@ if(!audio_is_playing(deathMusic)&&!control.mute&&deathTimer>100)audio_play_sound
 
 deathTimer-=1;
 
+global.mute=control.mute
+
 if(global.musicSelector==2) global.musicSelector=0;
 
 if(deathTimer<=0){

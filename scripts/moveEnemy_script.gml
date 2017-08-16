@@ -1,3 +1,3 @@
 x+= round(hSpeed)
-y+= round(vSpeed)
+if(!onGround)y+= round(vSpeed)
 vSpeed+=1

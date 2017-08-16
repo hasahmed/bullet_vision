@@ -1,5 +1,6 @@
 //Check for vertical collision
-if (collision_rectangle(x + (sprite_width / 2),y + (sprite_height / 2) * sign(vSpeed),x - (sprite_width / 2),y + ((sprite_height / 2) + abs(vSpeed)) * sign(vSpeed),Wall_p,0,true))
+floatHeight=argument0
+if (collision_rectangle(x + (sprite_width / 2),y + (sprite_height / 2) * sign(vSpeed)+floatHeight,x - (sprite_width / 2),y + ((sprite_height / 2) + abs(vSpeed)) * sign(vSpeed)+floatHeight,Wall_p,0,true))
 {
     if (sign(vSpeed) == -1)
         move_contact_solid(90,vSpeed);
@@ -9,15 +10,6 @@ if (collision_rectangle(x + (sprite_width / 2),y + (sprite_height / 2) * sign(vS
     onGround = true;
 }
 
-/*Check for horizontal collision
-if (collision_rectangle(x + (sprite_width / 2) * sign(hSpeed),y + (sprite_height / 2),x + ((sprite_width / 2) + abs(hSpeed)) * sign(hSpeed),y - (sprite_height / 2),Wall_p,0,true))
-{
-    if (sign(hSpeed) == -1)
-        move_contact_all(180,hSpeed);
-    else
-        move_contact_all(0,hSpeed);
-    hSpeed = 0;
-}*/
 /****************************************************************
 
    FUNCTION:   Koopa AI, enemy turns around when it reaches an edge
@@ -31,11 +23,11 @@ if (collision_rectangle(x + (sprite_width / 2) * sign(hSpeed),y + (sprite_height
    
    
 ****************************************************************/
-if (onGround==true && !collision_point(x + (sprite_width/2) +3 * sign(hSpeed), y + (sprite_height/2), Wall_p,0,true)){
+if (onGround==true && !collision_point(x + (sprite_width/2 +3) * sign(hSpeed), y + (sprite_height/2)+floatHeight, Wall_p,0,true)){
     hSpeed *= -1
 };
 
-else if(collision_line(x+(sprite_width/2)+3 * sign(hSpeed), y+(sprite_height/2)-6,x+(sprite_width/2)+3 * sign(hSpeed),y-(sprite_height/2),Wall,false,false)){
+else if(collision_line(x+(sprite_width/2+3) * sign(hSpeed), y+(sprite_height/2)-6+floatHeight,x+(sprite_width/2+3) * sign(hSpeed),y-(sprite_height/2)+floatHeight,Wall,false,false)){
     hSpeed *= -1;
     
 }

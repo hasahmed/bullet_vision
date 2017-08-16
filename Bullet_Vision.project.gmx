@@ -48,14 +48,11 @@
       <sprite>sprites\buttonContinue_s</sprite>
     </sprites>
     <sprites name="Player">
-      <sprite>sprites\playerFinal_s</sprite>
-      <sprite>sprites\tinyGuy</sprite>
-      <sprite>sprites\Granny_s</sprite>
-      <sprite>sprites\crosshair_s</sprite>
-      <sprite>sprites\grannyArm_s</sprite>
-      <sprite>sprites\player_ss_headless</sprite>
-      <sprite>sprites\player_with_jump</sprite>
       <sprite>sprites\player_head</sprite>
+      <sprite>sprites\playerFinal_s</sprite>
+      <sprite>sprites\crosshair_s</sprite>
+      <sprite>sprites\Granny_s</sprite>
+      <sprite>sprites\grannyArm_s</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\fallingGround_s</sprite>
@@ -196,6 +193,7 @@
         <script>scripts\initializeEnemyValues_script.gml</script>
         <script>scripts\moveEnemy_script.gml</script>
         <script>scripts\enemyCollisions_script.gml</script>
+        <script>scripts\newEnemyCollisions_script.gml</script>
         <script>scripts\throwBomb_script.gml</script>
         <script>scripts\makeSpike_script.gml</script>
         <script>scripts\makeShockwave_script.gml</script>
@@ -336,17 +334,17 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
-    <room>rooms\bossTwoLevel</room>
-    <room>rooms\levelSix</room>
     <room>rooms\rushin_Granny</room>
-    <room>rooms\start_screen</room>
     <room>rooms\levelOne</room>
     <room>rooms\levelTwo</room>
-    <room>rooms\levelSeven</room>
     <room>rooms\levelThree</room>
     <room>rooms\levelFour</room>
     <room>rooms\levelFive</room>
     <room>rooms\bossLevel</room>
+    <room>rooms\levelSix</room>
+    <room>rooms\levelSeven</room>
+    <room>rooms\bossTwoLevel</room>
+    <room>rooms\start_screen</room>
     <room>rooms\juggling_MiniGame</room>
     <room>rooms\room8</room>
   </rooms>
