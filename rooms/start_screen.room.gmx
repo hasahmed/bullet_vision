@@ -55,7 +55,7 @@ global.musicSelector=-1;</code>
   <instances>
     <instance objName="StartButton" x="96" y="416" name="inst_2A2C8FD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="QuitButton" x="832" y="512" name="inst_59F3FC3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StartScreenImg" x="192" y="-64" name="inst_6F359462" locked="0" code="" scaleX="0.914285719394684" scaleY="0.548571407794952" colour="4294967295" rotation="0"/>
+    <instance objName="StartScreenImg" x="512" y="224" name="inst_6F359462" locked="0" code="" scaleX="0.914285719394684" scaleY="0.548571407794952" colour="4294967295" rotation="0"/>
     <instance objName="MenuMusicPlayer" x="64" y="320" name="inst_246E47BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Cursor" x="112" y="335" name="inst_FD5B1FD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GoToVolcano" x="480" y="608" name="inst_96D98E73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

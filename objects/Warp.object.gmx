@@ -39,6 +39,7 @@ if !SaveObject.gameWasLoaded {
     Player.image_xscale = scaleFactor;
     Player.image_yscale = scaleFactor;
 }
+
 </string>
           </argument>
         </arguments>
@@ -62,6 +63,7 @@ if !SaveObject.gameWasLoaded {
           <argument>
             <kind>1</kind>
             <string>if(!control.paused){
+if(!control.mute&amp;&amp;!audio_is_playing(exitPortal))audio_play_sound(exitPortal,1,0);
 self.image_speed = iSpeed;
 Player.invincibilityTimer=4
 if(image_index&lt;28){

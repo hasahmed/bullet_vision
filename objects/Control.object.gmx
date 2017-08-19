@@ -162,7 +162,6 @@ game_end();
             <kind>1</kind>
             <string>if(paused)
     draw_sprite_tiled(screen_dim_s, 0, 0, 0)
-draw_text(400,400,mute)
 </string>
           </argument>
         </arguments>
@@ -235,7 +234,7 @@ draw_text(400,400,mute)
             audio_pause_sound(bossMusic2)
             songHeld=3
         }
-        if(!control.mute&amp;&amp;room != juggling_MiniGame &amp;&amp; room != rushin_Granny)
+        if(!control.mute&amp;&amp;room != juggling_MiniGame)
             audio_play_sound(pauseMusic,3,1);//play pause music
             
         audio_stop_sound(fuse);

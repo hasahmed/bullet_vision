@@ -73,7 +73,7 @@
             <kind>1</kind>
             <string>image_index=1
 audio_sound_gain(thud, 2, 0);
-if(!control.mute)audio_play_sound(thud, 1, false);
+if(!global.mute)audio_play_sound(thud, 1, false);
 </string>
           </argument>
         </arguments>

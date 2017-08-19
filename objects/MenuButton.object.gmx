@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with Control event_perform(ev_keypress, ord('P'));
+            <string>with control event_perform(ev_keypress, ord('P'));
 pauseMenuTearDown_script();
 room_goto(start_screen);
 </string>

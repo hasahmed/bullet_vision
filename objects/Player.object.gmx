@@ -89,11 +89,7 @@ alarm[3]=-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*shotgunFireable = true;
-alarm[2] = -1; //stops this timer from looping;*/
-
-//create casing
-/*if(!global.mute)*/
+            <string>bulletFireable=true
     casing=instance_create(x,y-30,Casing)
     casing.vSpeed=-7+random(3)
     casing.hSpeed=3-random(6)
@@ -252,7 +248,6 @@ padPauseHandler_script();
           <argument>
             <kind>1</kind>
             <string>drawReticle_script();
-draw_sprite(crosshair_s,0,bulletx,bullety)
 </string>
           </argument>
         </arguments>

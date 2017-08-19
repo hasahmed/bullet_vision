@@ -78,7 +78,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="896" y="1696" name="inst_81FF8C6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="928" y="1696" name="inst_08C55240" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="960" y="1696" name="inst_67448790" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bombThrower" x="1315" y="1603" name="inst_0E255EED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bombThrower" x="1313" y="1619" name="inst_0E255EED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="992" y="1696" name="inst_ECD7DCD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1024" y="1696" name="inst_F6E7C816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1056" y="1696" name="inst_2F162E98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -94,7 +94,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="1376" y="1696" name="inst_3DD22F03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1408" y="1696" name="inst_B1CFA9AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1408" y="1472" name="inst_1866E58F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bombThrower" x="2272" y="1379" name="inst_F774CF8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bombThrower" x="2272" y="1396" name="inst_F774CF8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1824" y="1472" name="inst_DE251783" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1856" y="1472" name="inst_4540B0A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1888" y="1472" name="inst_138483E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -134,7 +134,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="3392" y="1312" name="inst_2F3A3AFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="3424" y="1312" name="inst_C7AFD82A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="shootingEnemy" x="3392" y="1152" name="inst_DF08BE5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bombThrower" x="3328" y="1216" name="inst_D9AF5E89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bombThrower" x="3328" y="1235" name="inst_D9AF5E89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2880" y="1312" name="inst_EA6476A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="3808" y="1056" name="inst_04521B57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="3840" y="1056" name="inst_EE44B2E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -158,8 +158,8 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="4352" y="896" name="inst_C2001A24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4320" y="896" name="inst_0283AB1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4288" y="896" name="inst_1DE49558" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bombThrower" x="4168" y="963" name="inst_DDC0AC1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bombThrower" x="4384" y="803" name="inst_39E415CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bombThrower" x="4168" y="979" name="inst_DDC0AC1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bombThrower" x="4352" y="819" name="inst_39E415CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4384" y="896" name="inst_07384741" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4416" y="896" name="inst_7FF22B74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4448" y="896" name="inst_F993A388" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -167,7 +167,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="4512" y="896" name="inst_C9793C26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4544" y="896" name="inst_87BBE299" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4576" y="896" name="inst_2E58227B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Portal" x="4547" y="826" name="inst_EE76315C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Portal" x="4552" y="815" name="inst_EE76315C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4352" y="1024" name="inst_E217FDAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4352" y="992" name="inst_CA748514" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="4352" y="960" name="inst_71A01AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -220,7 +220,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="1504" y="1696" name="inst_654D73C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1536" y="1696" name="inst_F511B8E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1568" y="1696" name="inst_A924AC23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="TextBoxTrigger" x="224" y="1696" name="inst_65082709" locked="0" code="line[0]=&quot;Shoot bombs to deflect them&quot;&#xA;" scaleX="20" scaleY="0.871999979019165" colour="4294967295" rotation="0"/>
+    <instance objName="TextBoxTrigger" x="224" y="1696" name="inst_65082709" locked="0" code="line[0]=&quot;Shoot bombs to deflect them&quot;&#xA;line[1]=&quot;Bombs don't hurt when they touch you,&quot;&#xA;line[2]=&quot;only when they explode!&quot;&#xA;" scaleX="20" scaleY="0.871999979019165" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1408" y="1216" name="inst_8ACD27F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1408" y="1184" name="inst_89230CC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1408" y="1152" name="inst_ECD4744D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -257,6 +257,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="800" y="1088" name="inst_495040AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="768" y="1088" name="inst_F34EB45F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="768" y="1120" name="inst_829B48E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Warp" x="384" y="1504" name="inst_C0A8BF50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

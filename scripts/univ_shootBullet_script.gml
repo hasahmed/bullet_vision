@@ -3,7 +3,7 @@
 
 /* argument0 is a point_direction, random range to add a bit of randomness
 to the direction of the bullet */
-if (Player.shotgunFireable){
+if(Player.bulletFireable){
 p = argument0 + random_range(-3, 3); 
 var calledFromController = argument1;
 Crosshair.controllerPriority = calledFromController;

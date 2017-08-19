@@ -66,3 +66,4 @@ movingPlatformCollision=false;
 myDirection=0;
 
 blurTimer=-1;
+bulletFireable=true;

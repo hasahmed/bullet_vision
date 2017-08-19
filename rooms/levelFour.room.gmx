@@ -71,7 +71,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="128" y="1600" name="inst_8816FCCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="96" y="1600" name="inst_364A2FE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="64" y="1600" name="inst_98DA6A25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player" x="96" y="1504" name="inst_8EAC4BF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player" x="96" y="1536" name="inst_8EAC4BF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="640" y="1280" name="inst_6F54BDBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="672" y="1280" name="inst_E7784AB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="704" y="1280" name="inst_BD092B93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -95,7 +95,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="1920" y="1248" name="inst_ACA9EFFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="1920" y="1280" name="inst_72FFB36E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2432" y="1152" name="inst_DAFCCECB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bombThrower" x="2402" y="1027" name="inst_1C09FD0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bombThrower" x="2439" y="1043" name="inst_1C09FD0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2432" y="1184" name="inst_EF2C656F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2432" y="1216" name="inst_F45B52AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2560" y="1088" name="inst_58253575" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -139,7 +139,7 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="2336" y="1440" name="inst_5A6522BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2368" y="1440" name="inst_EA3E8D8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2400" y="1440" name="inst_9BB88017" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="WalkingEnemy" x="1984" y="1248" name="inst_B8080D77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WalkingEnemy" x="2016" y="1248" name="inst_B8080D77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="WalkingEnemy" x="2112" y="1248" name="inst_95E99BAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="WalkingEnemy" x="2208" y="1248" name="inst_E2708813" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="WalkingEnemy" x="2304" y="1248" name="inst_F3DCCA41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -154,14 +154,14 @@ global.musicSelector=0;</code>
     <instance objName="Wall" x="2912" y="1536" name="inst_87EBC617" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2944" y="1536" name="inst_8AD577F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2976" y="1536" name="inst_EF7842E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Checkpoint" x="2784" y="1440" name="inst_E36A1ABA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Checkpoint" x="2788" y="1456" name="inst_E36A1ABA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="HorizontalWall" x="3360" y="1536" name="inst_5A0E6814" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="VerticalWall" x="3648" y="1280" name="inst_4BAECF28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="5888" y="608" name="inst_E6DE9B87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="5920" y="608" name="inst_2E3DD3E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="5952" y="608" name="inst_5BB4739B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="5984" y="608" name="inst_8E404690" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Portal" x="5961" y="538" name="inst_32FC29EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Portal" x="5951" y="527" name="inst_32FC29EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2560" y="928" name="inst_1A5788BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2560" y="896" name="inst_EA16554F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="2560" y="864" name="inst_C198BC24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -202,6 +202,7 @@ global.musicSelector=0;</code>
     <instance objName="shootingEnemy" x="5152" y="320" name="inst_5A71510D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="shootingEnemy" x="5568" y="320" name="inst_0854E694" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="VerticalWall" x="320" y="1280" name="inst_2E1576D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Warp" x="128" y="1408" name="inst_85F5FC69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

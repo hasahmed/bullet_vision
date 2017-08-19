@@ -33,6 +33,7 @@ depth=Portal.depth-1
 xDist=x-Player.x
 yDist=y-10-Player.y
 Player.maxSpeed=0
+if(!control.mute)audio_play_sound(enterPortal,1,0)
 </string>
           </argument>
         </arguments>

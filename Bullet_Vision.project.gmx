@@ -28,12 +28,15 @@
       <sound>sound\vulcanology</sound>
       <sound>sound\bossMusic1</sound>
       <sound>sound\bossMusic2</sound>
+      <sound>sound\creditsMusic</sound>
     </sounds>
     <sound>sound\deathMusic</sound>
     <sound>sound\digeridoo</sound>
     <sound>sound\casing_sfx</sound>
     <sound>sound\Shoot5</sound>
     <sound>sound\LaserShot</sound>
+    <sound>sound\enterPortal</sound>
+    <sound>sound\exitPortal</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="buttons_s">
@@ -51,14 +54,11 @@
       <sprite>sprites\player_head</sprite>
       <sprite>sprites\playerFinal_s</sprite>
       <sprite>sprites\crosshair_s</sprite>
-      <sprite>sprites\Granny_s</sprite>
-      <sprite>sprites\grannyArm_s</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\fallingGround_s</sprite>
       <sprite>sprites\Ground_s</sprite>
       <sprite>sprites\rockThrower_s</sprite>
-      <sprite>sprites\portal_s</sprite>
       <sprite>sprites\portal2_s</sprite>
       <sprite>sprites\secret_s</sprite>
       <sprite>sprites\groundfill_s</sprite>
@@ -71,7 +71,6 @@
       <sprite>sprites\lava_s</sprite>
       <sprite>sprites\octopus_s</sprite>
       <sprite>sprites\warp_s</sprite>
-      <sprite>sprites\bossDoor_s</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\Genie_s</sprite>
@@ -104,15 +103,10 @@
       <sprite>sprites\screen_dim_s</sprite>
       <sprite>sprites\newBullet</sprite>
       <sprite>sprites\casing2_s</sprite>
-      <sprite>sprites\energyBullet_s</sprite>
       <sprite>sprites\spike_s</sprite>
     </sprites>
     <sprite>sprites\blankSquare_s</sprite>
-    <sprite>sprites\plantBody_s</sprite>
-    <sprite>sprites\plantHead_s</sprite>
-    <sprite>sprites\sprite62</sprite>
-    <sprite>sprites\sprite67</sprite>
-    <sprite>sprites\sprite69</sprite>
+    <sprite>sprites\credits_s</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Space2_b</background>
@@ -130,8 +124,11 @@
     <background>background\wall_big</background>
     <background>background\tileset_3</background>
     <background>background\menu_b</background>
+    <background>background\background15</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <scripts name="Player">
       <scripts name="Utility">
@@ -257,11 +254,9 @@
       <object>objects\HorizontalWall</object>
       <object>objects\Wall_p</object>
       <object>objects\FallingPortal</object>
-      <object>objects\signPost</object>
       <object>objects\TextBoxTrigger</object>
       <object>objects\ParralaxHandler</object>
       <object>objects\Warp</object>
-      <object>objects\BossDoor</object>
     </objects>
     <objects name="Enemies">
       <object>objects\WalkingEnemy</object>
@@ -272,9 +267,6 @@
       <object>objects\Boss</object>
       <object>objects\IceFrog</object>
       <object>objects\ShockwaveEnemy</object>
-      <object>objects\PlantBody</object>
-      <object>objects\PlantHead</object>
-      <object>objects\BossTwo</object>
     </objects>
     <objects name="Other">
       <object>objects\particle</object>
@@ -303,7 +295,7 @@
       <object>objects\RockShockwave</object>
       <object>objects\SaveObject</object>
       <object>objects\EndWarp</object>
-      <object>objects\Spore</object>
+      <object>objects\CreditScroll</object>
     </objects>
     <objects name="Minigame">
       <objects name="Juggling">
@@ -312,13 +304,6 @@
         <object>objects\AboveLavaWall</object>
         <object>objects\Lava</object>
         <object>objects\RockThrower</object>
-      </objects>
-      <objects name="GrannyBoard">
-        <object>objects\GrannyArm</object>
-        <object>objects\grannyControl</object>
-        <object>objects\Granny</object>
-        <object>objects\grannyWall</object>
-        <object>objects\wallSpawner</object>
       </objects>
     </objects>
     <objects name="buttons">
@@ -330,23 +315,19 @@
       <object>objects\ButtonContinue</object>
     </objects>
     <object>objects\DevUtil</object>
-    <object>objects\BossIntroToggler</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>
-    <room>rooms\rushin_Granny</room>
+    <room>rooms\start_screen</room>
     <room>rooms\levelOne</room>
     <room>rooms\levelTwo</room>
     <room>rooms\levelThree</room>
     <room>rooms\levelFour</room>
     <room>rooms\levelFive</room>
-    <room>rooms\bossLevel</room>
     <room>rooms\levelSix</room>
-    <room>rooms\levelSeven</room>
-    <room>rooms\bossTwoLevel</room>
-    <room>rooms\start_screen</room>
+    <room>rooms\bossLevel</room>
     <room>rooms\juggling_MiniGame</room>
-    <room>rooms\room8</room>
+    <room>rooms\creditsRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
