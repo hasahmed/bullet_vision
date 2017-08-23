@@ -50,7 +50,10 @@
             <kind>1</kind>
             <string>event_inherited();
 
-if(collision_line(x-sprite_width/2,y-sprite_height/2-1,x+sprite_width/2,y-sprite_height/2-1,Rock,0,1)) instance_destroy();
+if(collision_line(x-sprite_width/2,y-sprite_height/2-1,x+sprite_width/2,y-sprite_height/2-1,Rock,0,1)){
+  instance_create(x,y,CasingDestroyer)
+  instance_destroy();
+}
 </string>
           </argument>
         </arguments>

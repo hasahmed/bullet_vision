@@ -39,7 +39,11 @@ if !SaveObject.gameWasLoaded {
     Player.image_xscale = scaleFactor;
     Player.image_yscale = scaleFactor;
 }
-
+//respawn on checkpoints
+if(global.checkpointR==room){
+    x = global.checkpointx;
+    y = global.checkpointy - 64;
+};
 </string>
           </argument>
         </arguments>

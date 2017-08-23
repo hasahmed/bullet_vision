@@ -25,11 +25,8 @@ randomize(); // makes random numbers "true random"
 global.musicSelector=-1;
 
 global.currentRoom=levelOne;
-global.miniGamesUnlocked=false;
-
-//window_set_fullscreen(true)
-
-global.bossTwoIntro=true</code>
+global.miniGamesUnlocked=true;
+window_set_fullscreen(true)</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

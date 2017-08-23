@@ -119,30 +119,6 @@ if(!control.mute&amp;&amp;!paused){
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///close window
-game_end();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -267,6 +243,87 @@ game_end();
             <kind>1</kind>
             <string>audio_stop_all()
 mute=!mute
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//if(pauseControl){
+    if(paused){
+        //everything in this bblock is executed when the game is already paused, then
+        //paused is pressed again
+        
+        //TODO: add pause menu overlay buttons and logic into its own script
+        /*
+        with MenuButton instance_destroy();
+        with Cursor instance_destroy();
+        */
+        pauseMenuTearDown_script();
+        drawPaused = false;
+        paused=false;
+        audio_stop_sound(pauseMusic);
+        if(!control.mute){//resume music
+            if(songHeld==0)audio_resume_sound(Music);
+            else if(songHeld==1)audio_resume_sound(bossMusic1);
+            else if(songHeld==2)audio_resume_sound(octopus_sound);
+            else if(songHeld==3)audio_resume_sound(bossMusic2);
+        }
+        
+    }    
+    else{
+        if(room != start_screen){
+            //everything in this block is executed on the pause screen
+            
+            //TODO: add pause menu overlay buttons and logic into its own script
+            /*
+            instance_create(Player.x, Player.y, MenuButton);
+            instance_create(mouse_x, mouse_y, Cursor);
+            */
+            pauseMenuSetup_script();
+            
+            drawPaused = true;
+        if(global.musicSelector==0){//pause music
+            audio_pause_sound(Music);
+            songHeld=0;
+        }
+        else if(global.musicSelector==1){
+            audio_pause_sound(bossMusic1);
+            songHeld=1;
+        }
+        else if(global.musicSelector==2){
+            audio_pause_sound(octopus_sound);
+            songHeld=2;
+        }
+        else{
+            audio_pause_sound(bossMusic2)
+            songHeld=3
+        }
+        if(!control.mute&amp;&amp;room != juggling_MiniGame)
+            audio_play_sound(pauseMusic,3,1);//play pause music
+            
+        audio_stop_sound(fuse);
+        audio_stop_sound(digeridoo);
+        paused=true;
+        }
+    }        
+//}
 </string>
           </argument>
         </arguments>

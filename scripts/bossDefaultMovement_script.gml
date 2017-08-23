@@ -3,9 +3,11 @@ currentY=y;
 
 if(x<=leftBound){
     moveRight=true;
+    aesMoveRight=true
 }
 if(x>=rightBound){
     moveRight=false;
+    aesMoveRight=false
 }
 
 if(moveRight==true){

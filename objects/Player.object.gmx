@@ -28,11 +28,7 @@
             <string>initializePlayerValues_script();
 var cam = instance_create(0, 0, CameraHandler);
 gamepad_set_vibration(0, 0, 0); // make sure controller isn't vibrating on player creation
-//respawn on checkpoints
-if(global.checkpointR==room){
-    x = global.checkpointx;
-    y = global.checkpointy;
-};
+
 instance_create(0, 0, Crosshair);
 paused=false;
 saveAssign_script();

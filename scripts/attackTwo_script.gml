@@ -3,6 +3,7 @@ else goLeft=false;
 
 //if boss is closer to the left side
 if(goLeft){
+    aesMoveRight=true
     /*if(x>leftBound&&!swoop){
         angle=point_direction(leftBound,initialY,currentX,currentY)*pi/180;
         sineWave=0;
@@ -38,6 +39,7 @@ if(goLeft){
     }
 }
 else{
+    aesMoveRight=false
    /* if(!goLeft&&!swoop){
         angle=point_direction(currentX,currentY,rightBound,initialY)*pi/180;
         sineWave=0;

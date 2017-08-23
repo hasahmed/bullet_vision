@@ -711,15 +711,7 @@ if(!control.mute)audio_play_sound(vulcanology,1,1);</code>
     <instance objName="Fill" x="2368" y="1152" name="inst_7C0FFECF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2368" y="1184" name="inst_CDDB782C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2432" y="1632" name="inst_0C5F18F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2304" y="1984" name="inst_776214F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1984" name="inst_8B51C356" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2304" y="1952" name="inst_21695792" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2336" y="1856" name="inst_53898387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2240" y="1792" name="inst_FA7DE815" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2208" y="1856" name="inst_FB6E1402" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2208" y="1888" name="inst_93E07173" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2208" y="1920" name="inst_65D7555A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2240" y="1856" name="inst_2EA36480" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2272" y="1696" name="inst_3D38A75F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2240" y="1600" name="inst_7334200C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2240" y="1632" name="inst_0AB681A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -896,19 +888,11 @@ if(!control.mute)audio_play_sound(vulcanology,1,1);</code>
     <instance objName="Fill" x="2336" y="1760" name="inst_42437AF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2336" y="1792" name="inst_50D4DC47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2272" y="1760" name="inst_412342FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2240" y="1824" name="inst_BA5A791C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2272" y="1728" name="inst_F5B5088D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2304" y="1728" name="inst_51C337D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2304" y="1760" name="inst_9ACDA6B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2304" y="1792" name="inst_479B1EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1792" name="inst_DF003DBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1824" name="inst_C066F40A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2304" y="1856" name="inst_CA234B04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2304" y="1824" name="inst_32D83236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1856" name="inst_C87C6A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2240" y="1888" name="inst_FCC22B79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1888" name="inst_90E0DFD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2304" y="1888" name="inst_E2722A18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2336" y="1888" name="inst_458BCAFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2432" y="1824" name="inst_B80FAA2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2368" y="1824" name="inst_418D70F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1414,17 +1398,6 @@ if(!control.mute)audio_play_sound(vulcanology,1,1);</code>
     <instance objName="Fill" x="2368" y="1920" name="inst_78C2B947" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2400" y="1920" name="inst_63502E32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2336" y="1920" name="inst_80836677" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1920" name="inst_8D8930A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2240" y="1920" name="inst_79995467" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1920" name="inst_B43CB953" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1888" name="inst_3BA1A401" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2304" y="1888" name="inst_CC696C51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2304" y="1920" name="inst_E0557B4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1920" name="inst_1E4E3F56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2240" y="1920" name="inst_26DD43EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2240" y="1952" name="inst_1F392D58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2240" y="1984" name="inst_DFBF8ECC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="2272" y="1952" name="inst_7A1E5318" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2496" y="1888" name="inst_EA9A92EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2528" y="1920" name="inst_EB4E9F33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="2560" y="1920" name="inst_67D7E399" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -2401,12 +2374,6 @@ if(!control.mute)audio_play_sound(vulcanology,1,1);</code>
     <instance objName="Fill" x="1344" y="1984" name="inst_047899C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1376" y="1984" name="inst_30F337D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1440" y="1952" name="inst_913F86ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1792" y="1952" name="inst_0CDF8747" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1824" y="1952" name="inst_EEA99978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1792" y="1984" name="inst_37B8E4C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1760" y="1984" name="inst_91DF82E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1664" y="1952" name="inst_21495C32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1696" y="1952" name="inst_5C971BC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1600" y="1952" name="inst_3F640DD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1568" y="1952" name="inst_159FA40C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1536" y="1952" name="inst_061CAD6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -2416,10 +2383,6 @@ if(!control.mute)audio_play_sound(vulcanology,1,1);</code>
     <instance objName="Fill" x="1504" y="1984" name="inst_33961BA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1568" y="1984" name="inst_63E3E4A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1600" y="1984" name="inst_B587EDB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1632" y="1984" name="inst_0C302CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1664" y="1984" name="inst_A39189B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1728" y="1984" name="inst_46ED6941" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1696" y="1984" name="inst_0A77AA58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1536" y="1984" name="inst_F0399B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1472" y="1984" name="inst_B9DF5AD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1408" y="1984" name="inst_355D8200" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -2466,26 +2429,12 @@ if(!control.mute)audio_play_sound(vulcanology,1,1);</code>
     <instance objName="Fill" x="1536" y="1856" name="inst_32A0BFDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1504" y="1888" name="inst_48C82562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1536" y="1888" name="inst_724D3732" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1632" y="1952" name="inst_46B554C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1632" y="1920" name="inst_15DB560C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1664" y="1920" name="inst_2A1A66F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1728" y="1920" name="inst_31741DEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1792" y="1888" name="inst_081B637F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1792" y="1920" name="inst_7018A5AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1760" y="1920" name="inst_F358AC88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1760" y="1952" name="inst_EBF7C960" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1728" y="1952" name="inst_77B2AB43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1696" y="1920" name="inst_55EDEAC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1728" y="1888" name="inst_E6375275" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1696" y="1888" name="inst_90394ADA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1568" y="1888" name="inst_5128FEB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1504" y="1920" name="inst_D466494A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1536" y="1920" name="inst_60A62DB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1568" y="1920" name="inst_D1E867A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1600" y="1920" name="inst_FC3BC0D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fill" x="1600" y="1888" name="inst_3618F282" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1664" y="1888" name="inst_18BF7064" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fill" x="1632" y="1888" name="inst_7DD9D805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Lava" x="1824" y="1984" name="inst_2798998D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Lava" x="1856" y="1984" name="inst_B6042908" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Lava" x="1888" y="1984" name="inst_56DBEDED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

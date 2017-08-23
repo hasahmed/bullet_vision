@@ -28,6 +28,39 @@
             <string>///instaciation
 image_speed = 0;
 depth = -10000000;
+if(room==start_screen){
+    xInit = x
+    yInit = y
+    timerSpeed = .09
+    timer = random(2*pi)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(room == start_screen){
+    timer += timerSpeed
+    position = 3 * sin(timer)
+    y = yInit + position
+}
 </string>
           </argument>
         </arguments>
@@ -52,6 +85,7 @@ depth = -10000000;
             <kind>1</kind>
             <string>///set image back to default
 image_index = 0;
+if(room==start_screen)timerSpeed=.09
 </string>
           </argument>
         </arguments>
@@ -78,6 +112,7 @@ image_index = 0;
 audio_sound_gain(thud, 2, 0);
 if(!global.mute)audio_play_sound(thud, 1, false);
 image_index = 1;
+if(room==start_screen)timerSpeed=0
 </string>
           </argument>
         </arguments>

@@ -87,7 +87,7 @@ if(image_index&gt;=image_number-1){
         global.checkpointR=room;
         global.miniGamesUnlocked=true;
         global.currentRoom=levelOne;
-        room_goto(start_screen);
+        room_goto(creditsRoom)
     }
     else room_goto_next();
 }

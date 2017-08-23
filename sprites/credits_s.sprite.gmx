@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>925</bbox_right>
-  <bbox_top>80</bbox_top>
-  <bbox_bottom>1687</bbox_bottom>
+  <bbox_left>6</bbox_left>
+  <bbox_right>587</bbox_right>
+  <bbox_top>99</bbox_top>
+  <bbox_bottom>2988</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>1068</width>
-  <height>4000</height>
+  <width>600</width>
+  <height>3200</height>
   <frames>
     <frame index="0">images\credits_s_0.png</frame>
   </frames>
