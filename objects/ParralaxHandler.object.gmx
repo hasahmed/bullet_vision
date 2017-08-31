@@ -73,7 +73,7 @@ moveAdjustment = moveIncrement; //initialize value;
 
 //background_x[2] = bgsX[2] * view_xview[0];
 //background_x[3] = bgsX[3] * view_xview[0];
-background_x[1] += moveAdjustment; //this moves clouds left slightly
+background_x[1] += .3*moveAdjustment; //this moves clouds left slightly
 background_x[3] -= moveAdjustment;
 background_y[3] -= .5*moveAdjustment
 

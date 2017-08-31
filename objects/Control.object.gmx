@@ -41,7 +41,6 @@ screen_dim = noone;
 pauseControl=false;
 drawPaused = false;
 songHeld=0;
-instance_create(0, 0, DevUtil);
 mute=global.mute
 </string>
           </argument>

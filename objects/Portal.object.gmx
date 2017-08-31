@@ -73,20 +73,10 @@ image_speed=.2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*audio_stop_sound(fuse);
-audio_stop_sound(digeridoo);
-if(lastLevel){
-    global.checkpointR=room;
-    global.miniGamesUnlocked=true;
-    global.currentRoom=levelOne;
-    room_goto(start_screen);
-}
-else room_goto_next();*/
-if(makeWarp){
+            <string>if(makeWarp){
     portal=instance_create(x,y,EndWarp);
     if(lastLevel)portal.lastLevel=true;
     makeWarp=false;
-    
 }
 </string>
           </argument>

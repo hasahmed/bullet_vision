@@ -82,6 +82,7 @@ shotRock=instance_place(x,y,Rock);
 if(shotRock!=noone){
     shotRock.hSpeed= 12*cos(direction*pi/180);
     shotRock.vSpeed= -9*sin(direction*pi/180);
+    shotRock.rotSpeed = -50 + random(100)
     Scoreboard.myScore+=Scoreboard.numRocks;
     instance_destroy();
 }

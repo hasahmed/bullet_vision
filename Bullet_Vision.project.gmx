@@ -24,10 +24,8 @@
       <sound>sound\octopus_sound</sound>
       <sound>sound\menuMusic</sound>
       <sound>sound\pauseMusic</sound>
-      <sound>sound\grannyMusic</sound>
       <sound>sound\vulcanology</sound>
       <sound>sound\bossMusic1</sound>
-      <sound>sound\bossMusic2</sound>
       <sound>sound\creditsMusic</sound>
     </sounds>
     <sound>sound\deathMusic</sound>
@@ -100,6 +98,7 @@
       <sprite>sprites\explosion_s</sprite>
       <sprite>sprites\rock_s</sprite>
       <sprite>sprites\bomb_s</sprite>
+      <sprite>sprites\bomb2_s</sprite>
       <sprite>sprites\screen_dim_s</sprite>
       <sprite>sprites\newBullet</sprite>
       <sprite>sprites\casing2_s</sprite>
@@ -111,29 +110,18 @@
     <sprite>sprites\sparkle2_s</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\Space2_b</background>
-    <background>background\Blue</background>
-    <background>background\space_b</background>
-    <background>background\para_0</background>
-    <background>background\para_1</background>
-    <background>background\para_2</background>
-    <background>background\para_3</background>
     <background>background\tileset_1</background>
     <background>background\background7</background>
     <background>background\background8</background>
     <background>background\trees_front</background>
     <background>background\trees_back</background>
     <background>background\tileset_2</background>
-    <background>background\wall_big</background>
     <background>background\tileset_3</background>
     <background>background\menu_b</background>
-    <background>background\background15</background>
-    <background>background\background16</background>
-    <background>background\background18</background>
     <background>background\stars1_b</background>
     <background>background\stars2_b</background>
-    <background>background\asteroids_b</background>
-    <background>background\coolStuff_b</background>
+    <background>background\moreBiggerAsteriods</background>
+    <background>background\coolStuffStretch</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -323,7 +311,6 @@
       <object>objects\StartScreenImg</object>
       <object>objects\endGameButton</object>
     </objects>
-    <object>objects\DevUtil</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomInitialize</room>

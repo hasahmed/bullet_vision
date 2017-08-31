@@ -28,6 +28,10 @@
             <string>hSpeed=0;
 vSpeed=0;
 grav=.25;
+image_speed=0
+image_index=random(9)
+rotSpeed = -25 + random(50)
+rotDecay = .95 + random(.04)
 </string>
           </argument>
         </arguments>
@@ -51,7 +55,10 @@ grav=.25;
           <argument>
             <kind>1</kind>
             <string>if(!control.paused){
-  
+
+image_angle += rotSpeed
+rotSpeed*=rotDecay
+
 x+=hSpeed;
 if(abs(hSpeed)&lt;1) hSpeed=0;
 
